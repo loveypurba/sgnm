@@ -1,0 +1,96 @@
+// Header
+//    - Logo
+//    - Navigation
+
+// Header
+.primary-header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+//    - Logo
+.primary-logo {
+  width: 100%;
+  max-width: 15rem;
+  margin-top: 20px;
+  margin-left: 10px;
+  @media only screen and (min-width: $primary-navigation-breakpoint) {
+    max-width: 17rem;
+  }
+}
+
+//    - Navigation
+// Mobile-navigation button
+.primary-header-navbar-toggle {
+  border: 1px solid $color-white;
+  padding: 9px 10px;
+  margin: 8px 0;
+  border-radius: 4px;
+  background-color: transparent;
+  float: right;
+  margin-top: 62px;
+  margin-right: 33px;
+
+  @media only screen and (min-width: $primary-navigation-breakpoint) {
+    display: none;
+  }
+}
+
+.primary-header-navbar-toggle_icon_comp {
+  background-color: $color-white;
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+}
+
+.primary-header-navbar-toggle_icon_comp+.primary-header-navbar-toggle_icon_comp {
+  margin-top: 4px;
+}
+
+.primary-header-navbar_collapsed {
+  display: none;
+}
+
+// Primary Navigation
+.primary-navigation {
+  min-height: 50px;
+  display: none;
+
+  @media only screen and (min-width: $primary-navigation-breakpoint) {
+    display: inline-block;
+  }
+}
+
+.primary-navigation-container {
+  padding: 0;
+  margin: 0;
+  background: rgba(0, 0, 0, 0.9);
+
+  @media only screen and (min-width: $primary-navigation-breakpoint) {
+    position: absolute;
+    right: 40px;
+    top: 70px;
+    background: none;
+  }
+
+  li {
+    text-align: center;
+    padding: 1.6rem 0.8rem;
+    border: 1px solid $color-white;
+    margin: 0;
+
+    @media only screen and (min-width: $primary-navigation-breakpoint) {
+      margin-left: 1.7rem;
+      display: inline-block;
+      border: none;
+    }
+
+    a {
+      font-size: 1.8rem;
+      color: $color-white;
+    }
+  }
+}

@@ -1,0 +1,105 @@
+.hero-section {
+  background-image: url('../images/home/hero.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 57rem;
+
+  @media only screen and (min-width: 768px) {
+    height: 67rem;
+  }
+
+  @media only screen and (min-width: 1320px) {
+    min-height: 70rem;
+  }
+}
+
+.hero-section-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+
+.hero-section-content {
+  position: absolute;
+  // top: 55%;
+  top: 33rem;
+  left: 50%;
+  // -moz-transform: translateX(-50%) translateY(-50%);
+  // -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%) translateY(-50%);
+
+  color: $color-white;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  letter-spacing: 1rem;
+  background: rgba(45, 12, 12, 0.46);
+  line-height: 3rem;
+  padding: 2rem;
+
+  @media only screen and (min-width: $primary-navigation-breakpoint) {
+    font-size: 3.5rem;
+    line-height: 6rem;
+    padding: 1rem;
+  }
+}
+
+// Section Tri-widgets
+.tri-widgets {
+  height: 20rem;
+  border-bottom: 1px solid $color-light-gray;
+}
+
+.hero-widget-container {
+  @media only screen and (min-width: $tablet-breakpoint) {
+    margin: auto;
+    max-width: 102.4rem;
+    position: relative;
+    top: -9.5rem;
+  }
+
+  h3 {
+    color: $color-orange;
+  }
+}
+
+.hero-widget {
+  width: 90%;
+  height: 25rem;
+  position:relative;
+  background:#FFF;
+  margin: 6rem auto;
+  -webkit-box-shadow: 0 2px 6px 0px #777;
+  -moz-box-shadow: 0 2px 6px 0px #777;
+  box-shadow: 0 2px 6px 0px #777;
+
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 3.1rem 4.1rem;
+
+  @media only screen and (min-width: $tablet-breakpoint) {
+    width: 32.6%;
+    display: inline-block;
+    margin: 0 0.2rem;
+    vertical-align: middle;
+  }
+}
+
+.hero-widget__icon {
+  position: absolute;
+  border: 1px solid $color-orange;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  background: rgba(255, 59, 0, 0.84);
+  left: 50%;
+  top: 0;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}

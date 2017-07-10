@@ -1,0 +1,28 @@
+.test {
+  border: 1px solid red;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+.hide {
+  display: none;
+}
+
+.sgnm-button {
+  display: block;
+  width: 12rem;
+  margin: 1rem auto;
+  padding: 1rem;
+  background: $color-orange;
+  color: $color-white;
+  border-radius: 20px
+}

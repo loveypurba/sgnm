@@ -31,6 +31,7 @@
     <!-- Color the status bar on mobile devices -->
     <meta name="theme-color" content="#2F3BA2">
 
+    <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
 
     <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
@@ -40,16 +41,92 @@
   </head>
   <body>
 
-    <header>
-      <a href="/">
-        <img src="/images/logo.png" alt="Sri Guru Nanak Mission">
-      </a>
+    <header class="primary-header">
+      <div class="container">
+        <a href="/">
+          <img src="/images/logo.png" alt="Sri Guru Nanak Mission" class="primary-logo">
+        </a>
+
+        <button type="button" id="btnPrimaryNavigation" class="primary-header-navbar-toggle">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="primary-header-navbar-toggle_icon_comp"></span>
+          <span class="primary-header-navbar-toggle_icon_comp"></span>
+          <span class="primary-header-navbar-toggle_icon_comp"></span>
+        </button>
+
+        <nav id="primaryNavigation" class="primary-navigation">
+          <ul class="primary-navigation-container">
+            <li><a href="/">Home</a></li>
+            <li><a href="/mission">Mission</a></li>
+            <li><a href="/gallery">Gallery</a></li>
+            <li><a href="/events">Events</a></li>
+            <li><a href="/sewa">Sewa</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
+    <main>
+      <section class="hero-section">
+        <section class="hero-section-overlay">
+          <section class="hero-section-content">
+            <p>Waheguru Ji Ka Khalsa</p>
+            <p>Waheguru Ji Ki Fateh</p>
+          </section>
+        </section>
+      </section>
 
+      <!-- Tri-widgets -->
+      <section class="tri-widgets">
+        <section class="hero-widget-container">
+          <!-- #1: Latest Event-->
+          <section class="hero-widget">
+            <div class="hero-widget__icon">
+              <div class="icon-calendar"></div>
+            </div>
+
+            <div>
+              <h3>Upcoming Event</h3>
+              <p>Birmingham, Guru Nanak Gurdwara (128-130 High St, Smethwick B66 3AP, UK)</p>
+              <p>July 10 To July 19</p>
+              <a href="/register.html" class="sgnm-button">Register</a>
+            </div>
+          </section>
+
+          <!-- #2: Sewa-->
+          <section class="hero-widget">
+            <div class="hero-widget__icon">
+              <div class="icon-sewa"></div>
+            </div>
+
+            <div>
+              <h3>Sewa</h3>
+              <p>Dunera | Widow sewa</p>
+              <a href="/sewa.html" class="sgnm-button">View Details</a>
+            </div>
+          </section>
+
+          <!-- #3: Donation-->
+          <section class="hero-widget">
+            <div class="hero-widget__icon">
+              <div class="icon-donate"></div>
+            </div>
+            <div>
+              <h3>Make a donation</h3>
+              <p>We serve humanity</p>
+              <a href="/donate.html" class="sgnm-button">Donate</a>
+            </div>
+          </section>
+        </section>
+      </section>
+
+      
+    </main>
 
     <!-- build:js scripts/main.min.js -->
     <script src="scripts/main.js"></script>
+    <script src="scripts/header.js"></script>
     <!-- endbuild -->
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
