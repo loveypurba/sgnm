@@ -183,7 +183,7 @@ gulp.task('serve', ['nunjucks', 'scripts', 'styles'], () => {
   });
 
   // gulp.watch(['app/**/*.html'], reload);
-  gulp.watch(['app/**/*.nunjucks'], reload);
+  gulp.watch(['app/**/*.nunjucks'], ['nunjucks', reload]);
   gulp.watch(['app/styles/**/*.{scss,css}'], ['styles', reload]);
   gulp.watch(['app/scripts/**/*.js'], ['lint', 'scripts', reload]);
   gulp.watch(['app/images/**/*'], reload);
