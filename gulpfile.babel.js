@@ -127,6 +127,7 @@ gulp.task('scripts', () =>
       .pipe(gulp.dest('.tmp/scripts'))
 );
 
+// https://zellwk.com/blog/nunjucks-with-gulp/
 gulp.task('nunjucks', () => {
   // Gets .html and .nunjucks files in pages
   return gulp.src('app/pages/**/*.+(html|nunjucks)')
