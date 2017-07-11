@@ -64,7 +64,7 @@
   }
 }
 
-.primary-navigation-container {
+.primary-navigation-list-container {
   padding: 0;
   margin: 0;
   background: rgba(0, 0, 0, 0.9);
@@ -91,6 +91,12 @@
     a {
       font-size: 1.8rem;
       color: $color-white;
+    }
+
+    a:hover, a.selected {
+      @media only screen and (min-width: $primary-navigation-breakpoint) {
+        border-bottom: 5px solid $color-orange;
+      }
     }
   }
 }
