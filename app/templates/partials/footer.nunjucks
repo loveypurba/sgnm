@@ -1,13 +1,7 @@
 <footer class="sgnm-footer">
   <nav class="footer-navigation">
     <ul class="footer-navigation-list-container">
-      <li><a href="/">Home</a></li>
-      <li><a href="/mission.html">Mission</a></li>
-      <li><a href="/gallery.html">Gallery</a></li>
-      <li><a href="/events.html">Events</a></li>
-      <li><a href="/sewa">Sewa</a></li>
-      <li><a href="/donate.html">Donate</a></li>
-      <li><a href="/contact.html">Contact</a></li>
+      {% include "partials/navigation.nunjucks" %}
     </ul>
   </nav>
   <div class="copyright">
