@@ -17,11 +17,17 @@
   display: none;
 }
 
+hr {
+  color: $color-red;
+  border: 0.3rem solid;
+  width: 6rem;
+}
+
 .sgnm-button {
   display: block;
   width: 12rem;
   margin: 1rem auto;
-  padding: 1rem;
+  padding: .5rem 1rem;
   background: $color-orange;
   color: $color-white;
   border-radius: 20px

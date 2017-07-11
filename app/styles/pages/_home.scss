@@ -1,105 +1,270 @@
-.hero-section {
-  background-image: url('../images/home/hero.jpg');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  width: 100%;
-  height: 57rem;
+ $widgets-max-width: 102.4rem;
 
-  @media only screen and (min-width: 768px) {
-    height: 67rem;
-  }
-
-  @media only screen and (min-width: 1320px) {
-    min-height: 70rem;
-  }
-}
-
-.hero-section-overlay {
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 100%;
-  height: 100%;
-}
-
-.hero-section-content {
-  position: absolute;
-  // top: 55%;
-  top: 33rem;
-  left: 50%;
-  // -moz-transform: translateX(-50%) translateY(-50%);
-  // -webkit-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%) translateY(-50%);
-
-  color: $color-white;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 2.4rem;
-  letter-spacing: 1rem;
-  background: rgba(45, 12, 12, 0.46);
-  line-height: 3rem;
-  padding: 2rem;
-
-  @media only screen and (min-width: $primary-navigation-breakpoint) {
-    font-size: 3.5rem;
-    line-height: 6rem;
-    padding: 1rem;
-  }
-}
-
-// Section Tri-widgets
-.tri-widgets {
-  height: 20rem;
-  border-bottom: 1px solid $color-light-gray;
-}
-
-.hero-widget-container {
-  @media only screen and (min-width: $tablet-breakpoint) {
-    margin: auto;
-    max-width: 102.4rem;
-    position: relative;
-    top: -9.5rem;
-  }
-
-  h3 {
-    color: $color-orange;
-  }
-}
-
-.hero-widget {
-  width: 90%;
-  height: 25rem;
-  position:relative;
-  background:#FFF;
-  margin: 6rem auto;
-  -webkit-box-shadow: 0 2px 6px 0px #777;
-  -moz-box-shadow: 0 2px 6px 0px #777;
-  box-shadow: 0 2px 6px 0px #777;
-
-  text-align: center;
-  font-size: 1.6rem;
-  padding: 3.1rem 4.1rem;
+.sgnm-main {
+  font-size: 1.8rem;
+  line-height: 2.4rem;
 
   @media only screen and (min-width: $tablet-breakpoint) {
-    width: 32.6%;
-    display: inline-block;
-    margin: 0 0.2rem;
-    vertical-align: middle;
+    font-size: 1.6rem;
   }
 }
 
-.hero-widget__icon {
-  position: absolute;
-  border: 1px solid $color-orange;
-  width: 8rem;
-  height: 8rem;
-  border-radius: 50%;
-  background: rgba(255, 59, 0, 0.84);
-  left: 50%;
-  top: 0;
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
+.sgnm-outer-container {
+  border-top: 1px solid $color-light-gray;
+  // height: auto;
 }
+
+.sgnm-inner-container {
+  @media only screen and (min-width: $tablet-breakpoint) {
+    margin: 0 auto;
+    max-width: $widgets-max-width;
+  }
+}
+
+/*******************************************
+  * Section Hero
+  *****************************************/
+  .hero-section {
+    background-image: url('../images/home/hero.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 57rem;
+
+    @media only screen and (min-width: 768px) {
+      height: 67rem;
+    }
+
+    @media only screen and (min-width: 1320px) {
+      min-height: 70rem;
+    }
+  }
+
+  .section-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero-section-content {
+    position: absolute;
+    // top: 55%;
+    top: 33rem;
+    left: 50%;
+    // -moz-transform: translateX(-50%) translateY(-50%);
+    // -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%) translateY(-50%);
+
+    color: $color-white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    letter-spacing: 1rem;
+    background: rgba(45, 12, 12, 0.46);
+    line-height: 3rem;
+    padding: 2rem;
+
+    @media only screen and (min-width: $primary-navigation-breakpoint) {
+      font-size: 3.5rem;
+      line-height: 6rem;
+      padding: 1rem;
+    }
+  }
+  /*** End Section Hero ***/
+
+/*******************************************
+  * Section Tri-widgets
+  *****************************************/
+  .tri-widgets {
+    height: auto;
+
+    @media only screen and (min-width: $tablet-breakpoint) {
+      height: 18rem;;
+    }
+  }
+
+  .hero-widget-container {
+    @media only screen and (min-width: $tablet-breakpoint) {
+      position: relative;
+      top: -9.5rem;
+    }
+
+    h3 {
+      color: $color-orange;
+    }
+  }
+
+  .hero-widget {
+    width: 90%;
+    min-height: 26rem;
+    position:relative;
+    background:#FFF;
+    margin: 6rem auto 3rem;
+    -webkit-box-shadow: 0 2px 6px 0px #777;
+    -moz-box-shadow: 0 2px 6px 0px #777;
+    box-shadow: 0 2px 6px 0px #777;
+
+    text-align: center;
+    padding: 3.1rem 4.1rem;
+
+    @media only screen and (min-width: $tablet-breakpoint) {
+      width: 32.4%;
+      display: inline-block;
+      margin: 0 0.2rem;
+      vertical-align: middle;
+      height: 25rem;
+    }
+  }
+
+  .hero-widget__icon {
+    position: absolute;
+    border: 1px solid $color-orange;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    background: rgba(255, 59, 0, 0.84);
+    left: 50%;
+    top: 0;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  .tri-widgets-content {
+    margin: 0;
+  }
+
+  .tri-widgets-content__address {
+    max-height: 7.5rem;
+    overflow: hidden;
+  }
+  /*** End Section Tri-Widgets ***/
+
+
+/*******************************************
+  * Section About
+  *****************************************/
+  .about {
+    height: auto;
+    padding: 0 3rem;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+    }
+
+    @media only screen and (min-width: $tablet-breakpoint) {
+      // height: 27.5rem;
+      padding: 0;
+    }
+  }
+
+  .about-left-container__heading {
+    font-size: 3rem;
+  }
+
+  .about-left-container, .about-right-container {
+    @media only screen and (min-width: 600px) {
+      width: 50%;
+      float: left;
+      border-bottom: none;
+    }
+  }
+
+  .about-left-container {
+    height: auto;
+  }
+
+  .about-right-container {
+    height: auto;
+    background: url('../images/home/mataji-about.jpg') no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 33.1rem;
+
+    @media only screen and (min-width: 600px) {
+      width: 50%;
+    }
+
+    // img {
+    //   @media only screen and (min-width: 600px) {
+    //     width: 67%;
+    //   }
+    // }
+  }
+
+  /*** End Section About ***/
+
+/*******************************************
+  * Section Objectives
+  *****************************************/
+  .sgnm-objectives-wrapper {
+    background: url('../images/home/mission-aim.jpg') no-repeat;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    // height: 37rem;
+
+    color: white;
+
+    .section-overlay {
+      background: rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  .sgnm-objectives {
+    padding: 1rem 3rem;
+    border-bottom: 1px solid $color-light-gray;
+
+    @media only screen and (min-width: $primary-navigation-breakpoint) {
+      height: 31rem;
+      width: 100%;
+      padding: 1rem 0;
+      border-bottom: none;
+    }
+
+    hr {
+      text-align: left;
+      margin: 0 auto 0 0;
+      @media only screen and (min-width: $primary-navigation-breakpoint) {
+        text-align: center;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .sgnm-objectives__header {
+    @media only screen and (min-width: $primary-navigation-breakpoint) {
+      text-align: center;
+    }
+  }
+
+  .sgnm-objectives-list {
+    padding: 0;
+
+    @media only screen and (min-width: $primary-navigation-breakpoint) {
+      width: 33%;
+      float: left;
+    }
+
+    li {
+      margin: 2rem 0;
+      letter-spacing: 0.1rem;
+    }
+  }
+  /*** End Section Objectives ***/
+
+  /*******************************************
+  * Section Events
+  *****************************************/
+  .upcoming-events {
+    
+  }
+  /*** End Section Objectives ***/
