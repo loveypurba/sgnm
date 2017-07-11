@@ -1,4 +1,4 @@
- $widgets-max-width: 102.4rem;
+$widgets-max-width: 102.4rem;
 
 .sgnm-main {
   font-size: 1.8rem;
@@ -11,7 +11,6 @@
 
 .sgnm-outer-container {
   border-top: 1px solid $color-light-gray;
-  // height: auto;
 }
 
 .sgnm-inner-container {
@@ -19,6 +18,10 @@
     margin: 0 auto;
     max-width: $widgets-max-width;
   }
+}
+
+.sgnm-carousal-header {
+  text-align: center;
 }
 
 /*******************************************
@@ -224,13 +227,11 @@
 
   .sgnm-objectives {
     padding: 1rem 3rem;
-    border-bottom: 1px solid $color-light-gray;
 
     @media only screen and (min-width: $primary-navigation-breakpoint) {
       height: 31rem;
       width: 100%;
       padding: 1rem 0;
-      border-bottom: none;
     }
 
     hr {
