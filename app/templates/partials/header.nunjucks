@@ -1,0 +1,26 @@
+<header class="primary-header">
+  <div class="sgnm-header-container">
+    <a href="/">
+      <img src="/images/logo.png" alt="Sri Guru Nanak Mission" class="primary-logo">
+    </a>
+
+    <button type="button" id="btnPrimaryNavigation" class="primary-header-navbar-toggle">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="primary-header-navbar-toggle_icon_comp"></span>
+      <span class="primary-header-navbar-toggle_icon_comp"></span>
+      <span class="primary-header-navbar-toggle_icon_comp"></span>
+    </button>
+
+    <nav id="primaryNavigation" class="primary-navigation">
+      <ul class="primary-navigation-list-container">
+        <li><a class="selected" href="/">Home</a></li>
+        <li><a href="/mission.html">Mission</a></li>
+        <li><a href="/gallery.html">Gallery</a></li>
+        <li><a href="/events.html">Events</a></li>
+        <li><a href="/sewa">Sewa</a></li>
+        <li><a href="/donate.html">Donate</a></li>
+        <li><a href="/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>

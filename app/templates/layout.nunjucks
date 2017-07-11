@@ -43,31 +43,7 @@
   </head>
 <body>
 
-  <header class="primary-header">
-    <div class="sgnm-header-container">
-      <a href="/">
-        <img src="/images/logo.png" alt="Sri Guru Nanak Mission" class="primary-logo">
-      </a>
-
-      <button type="button" id="btnPrimaryNavigation" class="primary-header-navbar-toggle">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="primary-header-navbar-toggle_icon_comp"></span>
-        <span class="primary-header-navbar-toggle_icon_comp"></span>
-        <span class="primary-header-navbar-toggle_icon_comp"></span>
-      </button>
-
-      <nav id="primaryNavigation" class="primary-navigation">
-        <ul class="primary-navigation-list-container">
-          <li><a class="selected" href="/">Home</a></li>
-          <li><a href="/mission">Mission</a></li>
-          <li><a href="/gallery">Gallery</a></li>
-          <li><a href="/events">Events</a></li>
-          <li><a href="/sewa">Sewa</a></li>
-          <li><a href="/contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  {% include "partials/header.nunjucks" %}
 
   <main class="sgnm-main">
   
@@ -76,21 +52,7 @@
 
   </main>
   
-  <footer class="sgnm-footer">
-    <nav class="footer-navigation">
-      <ul class="footer-navigation-list-container">
-        <li><a href="/">Home</a></li>
-        <li><a href="/mission">Mission</a></li>
-        <li><a href="/gallery">Gallery</a></li>
-        <li><a href="/events">Events</a></li>
-        <li><a href="/sewa">Sewa</a></li>
-        <li><a href="/contact">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="copyright">
-      <p>Copyright © 2017</p>
-    </div>
-  </footer>
+  {% include "partials/footer.nunjucks" %}
 
   <script
   src="https://code.jquery.com/jquery-1.12.4.min.js"
