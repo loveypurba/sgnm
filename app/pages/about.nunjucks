@@ -1,0 +1,48 @@
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+
+{# Header #}
+{% set headerClass = "header-bg header-about" %}
+{% include "partials/header.nunjucks" %}
+
+<main>
+  {# Mission of Blissful living #}
+  <section class="sgnm-about-mission sgnm-container">
+    <h1 class="sgnm-center">Mission of Blissful Living</h1>
+    <hr>
+
+    <div class="sgnm-details-container">
+      <img src="images/about/mataji-about.jpg" alt="Mata Baljit Kaur ji Khalsa" class="sgnm-left section-about-mission-picture">
+      <p class="sgnm-right sgnm-about-details">Sri Guru Nanak Mission is a registered, not-for-profit organization founded by Mata Baljit Kaur ji Khalsa. Mission aims to spread the teachings of Guru Nanak Dev Ji all over the world and is dedicated in the service of humanity and mankind.</p>
+      <div class="sgnm-cb"></div>
+    </div>
+  </section>
+
+  {# Benefits #}
+  <section class="sgnm-about-benefits">
+    <div class="sgnm-container">
+      <p>Mataji has taken out missionary journeys to different parts of world and those who attended the classes have benefited and learnt in numerous wayts. Some of the key benefits include the following:</p>
+
+      <div class="sgnm-container-details">
+        <ul class="sgnm-left sgnm-about-details">
+          <li>Optimum utilization of Ambroisal Hour (Amrit vela)</li>
+          <li>Physical and mental soundness.</li>
+          <li>Drugs free, medicine free lefe</li>
+          <li>Positive thinking</li>
+          <li>Anger management</li>
+          <li>Self-relaization</li>
+          <li>Overcome depression and attain ever cheerfulness</li>
+          <li>Strengthening family relationships</li>
+          <li>Creating awareness on senior abuse</li>
+          <li>Increase in memory and concentration power</li>
+          <li></li>
+        </ul>
+        <img src="images/about/about-benefits.jpg" alt="Mata Baljit Kaur ji Khalsa" class="sgnm-right section-about-mission-picture">
+        <div class="sgnm-cb"></div>
+      </div>
+    </div>
+  </section>
+</main>
+  
+{% endblock %}

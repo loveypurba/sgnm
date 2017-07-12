@@ -34,7 +34,7 @@
     <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
   </head>
-  <body>
+  <body class="sgnm">
 
     <!-- You write code for this content block in another file -->
     {% block content %} {% endblock %}

@@ -1,0 +1,8 @@
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+
+{% set headerClass = "header-bg header-events" %}
+{% include "partials/header.nunjucks" %}
+  
+{% endblock %}

@@ -1,7 +1,7 @@
-<li><a class="selected" href="/">Home</a></li>
-<li><a href="/mission.html">Mission</a></li>
+<li><a href="/">Home</a></li>
+<li><a href="/about.html">About</a></li>
 <li><a href="/gallery.html">Gallery</a></li>
 <li><a href="/events.html">Events</a></li>
-<li><a href="/sewa">Sewa</a></li>
+<li><a href="/sewa.html">Sewa</a></li>
 <li><a href="/donate.html">Donate</a></li>
 <li><a href="/contact.html">Contact</a></li>

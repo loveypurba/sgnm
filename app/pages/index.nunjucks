@@ -2,137 +2,143 @@
 
 {% block content %}
 
-  <!-- Hero Section -->
-  <section class="hero-section">
-    <section class="section-overlay">
-      <section class="hero-section-content">
-        <p>Waheguru Ji Ka Khalsa</p>
-        <p>Waheguru Ji Ki Fateh</p>
+  {% set headerClass = "primary-header" %}
+  {% set noOverlay = "true" %}
+  {% include "partials/header.nunjucks" %}
+
+  <main class="sgnm-main">
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <section class="sgnm-overlay">
+        <section class="hero-section-content">
+          <p>Waheguru Ji Ka Khalsa</p>
+          <p>Waheguru Ji Ki Fateh</p>
+        </section>
       </section>
     </section>
-  </section>
 
-  <!-- Tri-widgets -->
-  <section class="tri-widgets">
-    <section class="hero-widget-container sgnm-inner-container">
-      <!-- #1: Latest Event-->
-      <section class="hero-widget">
-        <div class="hero-widget__icon">
-          <div class="icon-calendar"></div>
-        </div>
+    <!-- Tri-widgets -->
+    <section class="tri-widgets">
+      <section class="hero-widget-container sgnm-container">
+        <!-- #1: Latest Event-->
+        <section class="hero-widget">
+          <div class="hero-widget__icon">
+            <div class="icon-calendar"></div>
+          </div>
 
-        <h3>Upcoming Event</h3>
+          <h3>Upcoming Event</h3>
 
-        <p class="tri-widgets-content tri-widgets-content__address">Birmingham, Guru Nanak Gurdwara (128-130 High St, Smethwick B66 3AP, UK)</p>
+          <p class="tri-widgets-content tri-widgets-content__address">Birmingham, Guru Nanak Gurdwara (128-130 High St, Smethwick B66 3AP, UK)</p>
 
-        <p class="tri-widgets-content">July 10 To July 19</p>
+          <p class="tri-widgets-content">July 10 To July 19</p>
 
-        <a href="/register.html" class="sgnm-button">Register</a>
+          <a href="/register.html" class="sgnm-button">Register</a>
 
+        </section>
+
+        <!-- #2: Sewa-->
+        <section class="hero-widget">
+          <div class="hero-widget__icon">
+            <div class="icon-sewa"></div>
+          </div>
+
+          <div>
+            <h3>Sewa</h3>
+            <p>Dunera | Widow sewa</p>
+            <a href="/sewa.html" class="sgnm-button">View Details</a>
+          </div>
+        </section>
+
+        <!-- #3: Donation-->
+        <section class="hero-widget">
+          <div class="hero-widget__icon">
+            <div class="icon-donate"></div>
+          </div>
+          <div>
+            <h3>Make a donation</h3>
+            <p>We serve humanity</p>
+            <a href="/donate.html" class="sgnm-button">Donate</a>
+          </div>
+        </section>
       </section>
+    </section>
 
-      <!-- #2: Sewa-->
-      <section class="hero-widget">
-        <div class="hero-widget__icon">
-          <div class="icon-sewa"></div>
+    <!-- About -->
+    <section class="sgnm-outer-container">
+      <section class="about sgnm-container">
+        <div class="about-left-container">
+          <h2 class="about-left-container__heading">Mission of Blissful living</h2>
+          <hr align="left">
+          <p>Sri Guru Nanak mission is a registered, non-profitable organization founded by Mata Baljit Kaur ji Khalsa. Mission aims to spread the founding and teachings of Guru Nanak Dev ji all over the world and is dedicated in the service of humanity.</p>
         </div>
-
-        <div>
-          <h3>Sewa</h3>
-          <p>Dunera | Widow sewa</p>
-          <a href="/sewa.html" class="sgnm-button">View Details</a>
-        </div>
-      </section>
-
-      <!-- #3: Donation-->
-      <section class="hero-widget">
-        <div class="hero-widget__icon">
-          <div class="icon-donate"></div>
-        </div>
-        <div>
-          <h3>Make a donation</h3>
-          <p>We serve humanity</p>
-          <a href="/donate.html" class="sgnm-button">Donate</a>
+        
+        <div class="about-right-container">
+          <!--<img src="images/home/mataji-about.jpg" alt="Mata Baljeet Kaur ji Khalsa">-->
         </div>
       </section>
     </section>
-  </section>
 
-  <!-- About -->
-  <section class="sgnm-outer-container">
-    <section class="about sgnm-inner-container">
-      <div class="about-left-container">
-        <h2 class="about-left-container__heading">Mission of Blissful living</h2>
-        <hr align="left">
-        <p>Sri Guru Nanak mission is a registered, non-profitable organization founded by Mata Baljit Kaur ji Khalsa. Mission aims to spread the founding and teachings of Guru Nanak Dev ji all over the world and is dedicated in the service of humanity.</p>
-      </div>
+    <!-- Mission Objectives -->
+    <section class="sgnm-outer-container sgnm-objectives-wrapper">
+      <section class="sgnm-overlay">
+        <section class="sgnm-objectives sgnm-container">
+          <h2 class="sgnm-objectives__header">What we are helping</h2>
+          <hr>
+          <div>
+            <ul class="sgnm-objectives-list">
+              <li>Learn more abiut Sikhism</li>
+              <li>Positive thinking</li>
+              <li>Overcome depression and ever cheerfulness</li>
+              <li>Increase in memory power and concentration</li>
+            </ul>
+
+            <ul class="sgnm-objectives-list">
+              <li>Optimum utilization of ambrosial hour (Amrit vela)</li>
+              <li>Physical and mental soundness</li>
+              <li>Anger Management</li>
+              <li>Strengthen family relationships</li>
+            </ul>
+
+            <ul class="sgnm-objectives-list">
+              <li>Drugs and medicine free life</li>
+              <li>Self-realization</li>
+              <li>Creating awareness on senior abuse</li>
+              <li>Transformation of soul into The Supreme Soul</li>
+            </ul>
+          </div>
+        </section>
+      </section>
       
-      <div class="about-right-container">
-        <!--<img src="images/home/mataji-about.jpg" alt="Mata Baljeet Kaur ji Khalsa">-->
+    </section>
+
+    <!-- Upcoming Events-->
+    <!--<section class="sgnm-outer-container">
+      <section class="upcoming-events sgnm-container">
+        <h2>Upcoming Events</h2>
+
+      </section>
+    </section>-->
+
+    <!-- Carousal -->
+    <section class="sgnm-carousal">
+      <h2 class="sgnm-carousal-header">Gallery</h2>
+      <hr>
+      <div id="owl-demo" class="owl-carousel owl-theme">
+          <div class="item"><img src="images/home/mataji-bachan.jpg" alt="some text"></div>
+          <div class="item"><img src="images/home/mataji-bachan.jpg" alt="some text"></div>
+          <div class="item"><img src="images/home/mataji-bachan.jpg" alt="some text"></div>
+          <div class="item"><img src="images/home/mataji-bachan.jpg" alt="some text"></div>
+          <div class="item"><img src="images/home/mataji-bachan.jpg" alt="some text"></div>
+          <div class="item"><img src="images/home/mataji-bachan.jpg" alt="some text"></div>
+          <div class="item"><img src="images/home/mataji-bachan.jpg" alt="some text"></div>
+          <div class="item"><img src="images/home/mataji-bachan.jpg" alt="some text"></div>
+          <div class="item"><img src="images/home/mataji-bachan.jpg" alt="some text"></div>
+          <div class="item"><img src="images/home/mataji-bachan.jpg" alt="some text"></div>
+          <div class="item"><img src="images/home/mataji-bachan.jpg" alt="some text"></div>
+          <div class="item"><img src="images/home/mataji-bachan.jpg" alt="some text"></div>
       </div>
     </section>
-  </section>
-
-  <!-- Mission Objectives -->
-  <section class="sgnm-outer-container sgnm-objectives-wrapper">
-    <section class="section-overlay">
-      <section class="sgnm-objectives sgnm-inner-container">
-        <h2 class="sgnm-objectives__header">What we are helping</h2>
-        <hr>
-        <div>
-          <ul class="sgnm-objectives-list">
-            <li>Learn more abiut Sikhism</li>
-            <li>Positive thinking</li>
-            <li>Overcome depression and ever cheerfulness</li>
-            <li>Increase in memory power and concentration</li>
-          </ul>
-
-          <ul class="sgnm-objectives-list">
-            <li>Optimum utilization of ambrosial hour (Amrit vela)</li>
-            <li>Physical and mental soundness</li>
-            <li>Anger Management</li>
-            <li>Strengthen family relationships</li>
-          </ul>
-
-          <ul class="sgnm-objectives-list">
-            <li>Drugs and medicine free life</li>
-            <li>Self-realization</li>
-            <li>Creating awareness on senior abuse</li>
-            <li>Transformation of soul into The Supreme Soul</li>
-          </ul>
-        </div>
-      </section>
-    </section>
-    
-  </section>
-
-  <!-- Upcoming Events-->
-  <!--<section class="sgnm-outer-container">
-    <section class="upcoming-events sgnm-inner-container">
-      <h2>Upcoming Events</h2>
-
-    </section>
-  </section>-->
-
-  <!-- Carousal -->
-  <section class="sgnm-carousal">
-    <h2 class="sgnm-carousal-header">Gallery</h2>
-    <hr>
-    <div id="owl-demo" class="owl-carousel owl-theme">
-        <div class="item"><img src="images/home/mataji-bachan.jpg" alt="some text"></div>
-        <div class="item"><img src="images/home/mataji-bachan.jpg" alt="some text"></div>
-        <div class="item"><img src="images/home/mataji-bachan.jpg" alt="some text"></div>
-        <div class="item"><img src="images/home/mataji-bachan.jpg" alt="some text"></div>
-        <div class="item"><img src="images/home/mataji-bachan.jpg" alt="some text"></div>
-        <div class="item"><img src="images/home/mataji-bachan.jpg" alt="some text"></div>
-        <div class="item"><img src="images/home/mataji-bachan.jpg" alt="some text"></div>
-        <div class="item"><img src="images/home/mataji-bachan.jpg" alt="some text"></div>
-        <div class="item"><img src="images/home/mataji-bachan.jpg" alt="some text"></div>
-        <div class="item"><img src="images/home/mataji-bachan.jpg" alt="some text"></div>
-        <div class="item"><img src="images/home/mataji-bachan.jpg" alt="some text"></div>
-        <div class="item"><img src="images/home/mataji-bachan.jpg" alt="some text"></div>
-    </div>
-  </section>
-  <!-- End Carousal-->
+    <!-- End Carousal-->
+  </main>
 
 {% endblock %}

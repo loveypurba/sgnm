@@ -1,20 +1,22 @@
-<header class="primary-header">
-  <div class="sgnm-header-container">
-    <a href="/">
-      <img src="/images/logo.png" alt="Sri Guru Nanak Mission" class="primary-logo">
-    </a>
+<header class="{{ headerClass }}">
+  <div {% if not noOverlay %} class="sgnm-overlay" {% endif %}>
+    <div class="sgnm-header-container">
+      <a href="/">
+        <img src="/images/logo.png" alt="Sri Guru Nanak Mission" class="primary-logo">
+      </a>
 
-    <button type="button" id="btnPrimaryNavigation" class="primary-header-navbar-toggle">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="primary-header-navbar-toggle_icon_comp"></span>
-      <span class="primary-header-navbar-toggle_icon_comp"></span>
-      <span class="primary-header-navbar-toggle_icon_comp"></span>
-    </button>
+      <button type="button" id="btnPrimaryNavigation" class="primary-header-navbar-toggle">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="primary-header-navbar-toggle_icon_comp"></span>
+        <span class="primary-header-navbar-toggle_icon_comp"></span>
+        <span class="primary-header-navbar-toggle_icon_comp"></span>
+      </button>
 
-    <nav id="primaryNavigation" class="primary-navigation">
-      <ul class="primary-navigation-list-container">
-        {% include "partials/navigation.nunjucks" %}
-      </ul>
-    </nav>
+      <nav id="primaryNavigation" class="primary-navigation">
+        <ul class="primary-navigation-list-container">
+          {% include "partials/navigation.nunjucks" %}
+        </ul>
+      </nav>
+    </div>
   </div>
 </header>
