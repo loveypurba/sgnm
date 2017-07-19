@@ -1,8 +1,44 @@
 {% extends "layout.nunjucks" %}
 
+{# Header #}
+{% block header %}
+  {% set headerClass = "header-bg header-sewa" %}
+  {% set isSewaSelected = true %}
+  {% include "partials/header.nunjucks" %}
+{% endblock %}
+
 {% block content %}
 
-{% set headerClass = "header-bg header-sewa" %}
-{% include "partials/header.nunjucks" %}
+<main> 
+  {# Sewa #}
+  <section class="sgnm-sewa sgnm-container">
+    <h1 class="sgnm-center">Sewa</h1>
+    <hr>
+
+    {# Sewa Widow #}
+    <div class="sgnm-sewa-widow-sewa-container">
+      <img src="images/sewa/widow-sewa.jpg" alt="widow sewa">
+      <div class="sgnm-sewa-info-container">
+        <h2>Widow Sewa</h2>
+        <p>Sri Guru Nanak Mission deeply understands the pain, and challenges faced by single mothers. Especially in India, the problems faced by a single mother are unimaginable. Sri Guru Nanak Mission is commited to help single mothers by helping their children provide free education, helping them find jobs, and providing them financial assistance.</p>
+
+        <a href="/donate.html" class="sgnm-button">Donate</a>
+
+      </div>
+    </div>
+
+    {# Sewa Dunera #}
+    <div class="sgnm-sewa-widow-sewa-container">
+      <img src="images/sewa/dunera.jpg" alt="Dunera">
+      <div class="sgnm-sewa-info-container">
+        <h2>Dunera Sewa</h2>
+        <p>Dunera is a beautiful hill station located at Punjab, Himachal border in India. Sri Guru Nanak Mission, with help of voluntary donations, is getting a beautiful campus constructed thereby wherein Free camps are organized which help the community, both spiritually as well as by improving their health.</p>
+
+        <a href="/donate.html" class="sgnm-button">Donate</a>
+        
+      </div>
+    </div>
+  </section>
+</main>
   
 {% endblock %}

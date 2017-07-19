@@ -1,13 +1,11 @@
 {% extends "layout.nunjucks" %}
 
-{% block header %}
+{% block content %}
+
   {% set headerClass = "primary-header" %}
   {% set noOverlay = "true" %}
-  {% set isHomeSelected = true %}
   {% include "partials/header.nunjucks" %}
-{% endblock %}
 
-{% block content %}
   <main class="sgnm-main">
     <!-- Hero Section -->
     <section class="hero-section">

@@ -1,8 +1,159 @@
 {% extends "layout.nunjucks" %}
 
+{# Header #}
+{% block header %}
+  {% set headerClass = "header-bg header-events" %}
+  {% set isEventsSelected = true %}
+  {% include "partials/header.nunjucks" %}
+{% endblock %}
+
 {% block content %}
 
-{% set headerClass = "header-bg header-events" %}
-{% include "partials/header.nunjucks" %}
+<main>
+  {# Upcoming Events #}
+  <section class="sgnm-upcoming-events sgnm-container">
+    <h1 class="sgnm-center">Upcoming Events</h1>
+    <hr>
+
+    <div class="sgnm-events-container">
+
+      {# Event #}
+      <div class="sgnm-event">
+        <div class="sgnm-event-section-left">
+          {#<span class="sgnm-top">17-23 July</span>#}
+          <img src="images/events/city/durby.jpg" alt="Location Durby" class="sgnm-event-img">
+        </div>
+
+        <div class="sgnm-event-section-right">
+          <div class="sgnm-event-section-location">Durby</div>
+          <div>17-23 July, 2017</div>
+          <div>Venue:</div>
+
+          <br>
+
+          <div>Gurudwara Sri Guru Singh Sabha</div>
+          <div>Durby</div>
+          <br>
+          <div>Time: 4:00 am to 6:00 am</div>
+          <br>
+          <div>FREE registration will be done at Gurudwara Sahib on 15th and 16th July, 2017</div>
+          <div>Register online or call 9999999999, 8888888888</div>
+
+          <a href="/register.html" class="sgnm-button sgnm-event-button">Register</a>
+        </div>
+        <div class="sgnm-cb"></div>
+      </div>
+
+      {# Event #}
+      <div class="sgnm-event">
+        <div class="sgnm-event-section-left">
+          {#<span class="sgnm-top">17-23 July</span>#}
+          <img src="images/events/city/durby.jpg" alt="Location Durby" class="sgnm-event-img">
+        </div>
+
+        <div class="sgnm-event-section-right">
+          <div class="sgnm-event-section-location">Durby</div>
+          <div>17-23 July, 2017</div>
+          <div>Venue:</div>
+
+          <br>
+
+          <div>Gurudwara Sri Guru Singh Sabha</div>
+          <div>Durby</div>
+          <br>
+          <div>Time: 4:00 am to 6:00 am</div>
+          <br>
+          <div>FREE registration will be done at Gurudwara Sahib on 15th and 16th July, 2017</div>
+          <div>Register online or call 9999999999, 8888888888</div>
+
+          <a href="/register.html" class="sgnm-button sgnm-event-button">Register</a>
+        </div>
+        <div class="sgnm-cb"></div>
+      </div>
+
+      {# Event #}
+      <div class="sgnm-event">
+        <div class="sgnm-event-section-left">
+          {#<span class="sgnm-top">17-23 July</span>#}
+          <img src="images/events/city/durby.jpg" alt="Location Durby" class="sgnm-event-img">
+        </div>
+
+        <div class="sgnm-event-section-right">
+          <div class="sgnm-event-section-location">Durby</div>
+          <div>17-23 July, 2017</div>
+          <div>Venue:</div>
+
+          <br>
+
+          <div>Gurudwara Sri Guru Singh Sabha</div>
+          <div>Durby</div>
+          <br>
+          <div>Time: 4:00 am to 6:00 am</div>
+          <br>
+          <div>FREE registration will be done at Gurudwara Sahib on 15th and 16th July, 2017</div>
+          <div>Register online or call 9999999999, 8888888888</div>
+
+          <a href="/register.html" class="sgnm-button sgnm-event-button">Register</a>
+        </div>
+        <div class="sgnm-cb"></div>
+      </div>
+
+      {# Event #}
+      <div class="sgnm-event">
+        <div class="sgnm-event-section-left">
+          {#<span class="sgnm-top">17-23 July</span>#}
+          <img src="images/events/city/durby.jpg" alt="Location Durby" class="sgnm-event-img">
+        </div>
+
+        <div class="sgnm-event-section-right">
+          <div class="sgnm-event-section-location">Durby</div>
+          <div>17-23 July, 2017</div>
+          <div>Venue:</div>
+
+          <br>
+
+          <div>Gurudwara Sri Guru Singh Sabha</div>
+          <div>Durby</div>
+          <br>
+          <div>Time: 4:00 am to 6:00 am</div>
+          <br>
+          <div>FREE registration will be done at Gurudwara Sahib on 15th and 16th July, 2017</div>
+          <div>Register online or call 9999999999, 8888888888</div>
+
+          <a href="/register.html" class="sgnm-button sgnm-event-button">Register</a>
+        </div>
+        <div class="sgnm-cb"></div>
+      </div>
+
+      {# Event #}
+      <div class="sgnm-event">
+        <div class="sgnm-event-section-left">
+          {#<span class="sgnm-top">17-23 July</span>#}
+          <img src="images/events/city/durby.jpg" alt="Location Durby" class="sgnm-event-img">
+        </div>
+
+        <div class="sgnm-event-section-right">
+          <div class="sgnm-event-section-location">Durby</div>
+          <div>17-23 July, 2017</div>
+          <div>Venue:</div>
+
+          <br>
+
+          <div>Gurudwara Sri Guru Singh Sabha</div>
+          <div>Durby</div>
+          <br>
+          <div>Time: 4:00 am to 6:00 am</div>
+          <br>
+          <div>FREE registration will be done at Gurudwara Sahib on 15th and 16th July, 2017</div>
+          <div>Register online or call 9999999999, 8888888888</div>
+
+          <a href="/register.html" class="sgnm-button sgnm-event-button">Register</a>
+        </div>
+        <div class="sgnm-cb"></div>
+      </div>
+
+    </div>
+  </section>
+</main>
   
 {% endblock %}

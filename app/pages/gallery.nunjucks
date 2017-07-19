@@ -1,8 +1,12 @@
 {% extends "layout.nunjucks" %}
 
+{# Header #}
+{% block header %}
+  {% set headerClass = "header-bg header-gallery" %}
+  {% set isGallerySelected = true %}
+  {% include "partials/header.nunjucks" %}
+{% endblock %}
+
 {% block content %}
 
-{% set headerClass = "header-bg header-gallery" %}
-{% include "partials/header.nunjucks" %}
-  
 {% endblock %}

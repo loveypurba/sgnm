@@ -32,7 +32,8 @@
   padding: .5rem 1rem;
   background: $color-orange;
   color: $color-white;
-  border-radius: 20px
+  border-radius: 2rem;
+  text-align: center;
 }
 
 .sgnm-overlay {
@@ -45,7 +46,7 @@
   width: 100%;
 
   @media only screen and (min-width: 600px) {
-    width: 49%;
+    width: auto;
     display: inline-block;
   }
 }
@@ -60,6 +61,10 @@
 
 .sgnm-center {
   text-align: center;
+}
+
+.sgnm-top {
+  vertical-align: top;
 }
 
 .sgnm-main {
@@ -80,9 +85,18 @@
 }
 
 .sgnm-container {
+  font-size: 1.8rem;
+  padding: 0 3rem;
+  position: relative;
   @media only screen and (min-width: $tablet-breakpoint) {
     margin: 0 auto;
     max-width: $container-max-width;
     font-size: 1.6rem;
+    padding: 0;
+  }
+
+  p {
+    line-height: 2.7rem;
+    text-align: justify;
   }
 }

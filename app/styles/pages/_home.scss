@@ -52,8 +52,8 @@
   /*** End Section Hero ***/
 
 /*******************************************
-  * Section Tri-widgets
-  *****************************************/
+* Section Tri-widgets
+*****************************************/
   .tri-widgets {
     height: auto;
 
@@ -121,21 +121,19 @@
 
 
 /*******************************************
-  * Section About
-  *****************************************/
+* Section About
+*****************************************/
   .about {
     height: auto;
-    padding: 0 3rem;
     overflow: hidden;
 
     img {
       width: 100%;
     }
 
-    @media only screen and (min-width: $tablet-breakpoint) {
-      // height: 27.5rem;
-      padding: 0;
-    }
+    // @media only screen and (min-width: $tablet-breakpoint) {
+    //   padding: 0;
+    // }
   }
 
   .about-left-container__heading {
@@ -176,8 +174,8 @@
   /*** End Section About ***/
 
 /*******************************************
-  * Section Objectives
-  *****************************************/
+* Section Objectives
+*****************************************/
   .sgnm-objectives-wrapper {
     background: url('../images/home/mission-aim.jpg') no-repeat;
     background-position: center center;

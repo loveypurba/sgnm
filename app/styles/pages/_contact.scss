@@ -1,0 +1,19 @@
+.contact-us-address-container{
+  width: 50%;
+  margin: 5rem;
+  color: $color-dark-gray;
+
+  h2 {
+    color: $color-orange;
+    text-transform: uppercase;
+  }
+
+  div {
+    margin: 0 0 1rem 1rem;
+  }
+}
+
+.contact-us-address-wrapper {
+  // border-top: 1px solid $color-light-gray;
+  border-bottom: 1px solid $color-light-gray;
+}

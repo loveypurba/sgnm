@@ -1,7 +1,7 @@
-<li><a href="/">Home</a></li>
-<li><a href="/about.html">About</a></li>
-<li><a href="/gallery.html">Gallery</a></li>
-<li><a href="/events.html">Events</a></li>
-<li><a href="/sewa.html">Sewa</a></li>
-<li><a href="/donate.html">Donate</a></li>
-<li><a href="/contact.html">Contact</a></li>
+<li><a href="/" class = "{% if isHomeSelected %} selected {% endif %}" >Home</a></li>
+<li><a href="/about.html" class = "{% if isAboutSelected %} selected {% endif %}">About</a></li>
+{#<li><a href="/gallery.html" class = "{% if isGallerySelected %} selected {% endif %}">Gallery</a></li>#}
+<li><a href="/events.html" class = "{% if isEventsSelected %} selected {% endif %}">Events</a></li>
+<li><a href="/sewa.html" class = "{% if isSewaSelected %} selected {% endif %}">Sewa</a></li>
+<li><a href="/donate.html" class = "{% if isDonateSelected %} selected {% endif %}">Donate</a></li>
+<li><a href="/contact.html" class = "{% if isContactSelected %} selected {% endif %}">Contact</a></li>
