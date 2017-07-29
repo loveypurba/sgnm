@@ -75,29 +75,15 @@
   // Your custom JavaScript goes here
 
   // http://www.landmarkmlp.com/js-plugin/owl.carousel/demos/custom.html
-  $(document).ready(function() {
-    $('.owl-carousel').owlCarousel({
-        loop:true,
-        center:true,
-        lazyLoad : true,
-        responsive:{
-            0:{
-                items:1
-            },
-            600:{
-                items:3
-            },
-            1000:{
-                items:4
-            }
-        },
-        //Basic Speeds
-        slideSpeed : 200,
-        paginationSpeed : 800,
-        rewindSpeed : 1000,
- 
-        pagination: false
-    });
 
+  $(document).ready(function() {
+    // (function() { 
+      Galleria.loadTheme('scripts/lib/galleria.classic.min.js');
+      Galleria.run('.galleria');
+    // }());
+    
+    // setTimeout(function() {
+      $("body").show();
+    // }, 5000);    
   });
 })();

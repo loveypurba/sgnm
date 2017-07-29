@@ -130,7 +130,7 @@ gulp.task('scripts', () =>
 // https://zellwk.com/blog/nunjucks-with-gulp/
 gulp.task('nunjucks', () => {
   // Gets .html and .nunjucks files in pages
-  return gulp.src('app/pages/**/*.+(html|nunjucks)')
+  return gulp.src('app/pages/**/*.+(nunjucks)')
   // Renders template with nunjucks
   .pipe($.nunjucksRender({
       path: ['app/templates']

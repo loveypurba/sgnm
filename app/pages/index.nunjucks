@@ -4,20 +4,55 @@
   {% set headerClass = "primary-header" %}
   {% set noOverlay = "true" %}
   {% set isHomeSelected = true %}
-  {% include "partials/header.nunjucks" %}
+  {% include "partials/header.nunjucks" %}  
 {% endblock %}
 
 {% block content %}
+  
   <main class="sgnm-main">
     <!-- Hero Section -->
-    <section class="hero-section">
-      <section class="sgnm-overlay">
-        <section class="hero-section-content">
-          <p>Waheguru Ji Ka Khalsa</p>
-          <p>Waheguru Ji Ki Fateh</p>
-        </section>
-      </section>
-    </section>
+     <section class="hero-section">
+      {# Carousel #}
+      <ul class="sgnm-cb-slideshow">
+        <li>
+          <span>Image 01</span>
+          <div>
+            <h3>Its a single thought which can make you feel closer to the Almighty. Just think about him, and you are there.</h3>
+          </div>
+        </li>
+        <li>
+          <span>Image 02</span>
+          <div>
+            <h3>Waheguru Ji Ka Khalsa, Waheguru Ji Ki Fateh</h3>
+          </div>
+        </li>
+        <li>
+          <span>Image 03</span>
+          <div>
+            <h3>Waheguru Ji Ka Khalsa, Waheguru Ji Ki Fateh</h3>
+          </div>
+        </li>
+        <li>
+          <span>Image 04</span>
+          <div>
+            <h3>Waheguru Ji Ka Khalsa, Waheguru Ji Ki Fateh</h3>
+          </div>
+        </li>
+        <li>
+          <span>Image 05</span>
+          <div>
+            <h3>Waheguru Ji Ka Khalsa, Waheguru Ji Ki Fateh</h3>
+          </div>
+        </li>
+        <li>
+          <span>Image 06</span>
+          <div>
+            <h3>Waheguru Ji Ka Khalsa, Waheguru Ji Ki Fateh</h3>
+          </div>
+        </li>
+      </ul> 
+      
+    </section> 
 
     <!-- Tri-widgets -->
     <section class="tri-widgets">
@@ -125,7 +160,7 @@
     <section class="sgnm-carousal">
       <h2 class="sgnm-carousal-header">Gallery</h2>
       <hr>
-      <div id="owl-demo" class="owl-carousel owl-theme">
+      {# <div id="owl-demo" class="owl-carousel owl-theme">
           <div class="item"><img src="images/home/mataji-bachan.jpg" alt="some text"></div>
           <div class="item"><img src="images/home/mataji-bachan.jpg" alt="some text"></div>
           <div class="item"><img src="images/home/mataji-bachan.jpg" alt="some text"></div>
@@ -138,9 +173,32 @@
           <div class="item"><img src="images/home/mataji-bachan.jpg" alt="some text"></div>
           <div class="item"><img src="images/home/mataji-bachan.jpg" alt="some text"></div>
           <div class="item"><img src="images/home/mataji-bachan.jpg" alt="some text"></div>
+      </div> #}
+      <div class="galleria">
+        <img src="images/home/gallery/1.jpg">
+        <img src="images/home/gallery/2.jpg">
+        <img src="images/home/gallery/3.jpg">
+        <img src="images/home/gallery/4.jpg">
+        <img src="images/home/gallery/5.jpg">
+        <img src="images/home/gallery/6.jpg">
+        <img src="images/home/gallery/7.jpg">
+        <img src="images/home/gallery/8.jpg">
+        <img src="images/home/gallery/9.jpg">
+        <img src="images/home/gallery/10.jpg">
+        <img src="images/home/gallery/11.jpg">
+        <img src="images/home/gallery/12.jpg">
+        <img src="images/home/gallery/13.jpg">
       </div>
     </section>
     <!-- End Carousal-->
   </main>
 
+{% endblock %}
+
+{% block blockStyleScripts %}
+  <style>
+    .galleria { max-width: 700px; height: 400px; background: #000 }
+  </style>
+
+  <script src="scripts/lib/galleria-1.5.7.min.js"></script>
 {% endblock %}

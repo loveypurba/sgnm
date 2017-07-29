@@ -3,14 +3,14 @@
 }
 
 /*******************************************
-  * Section Hero
-  *****************************************/
+* Section Hero
+*****************************************/
   .hero-section {
-    background-image: url('../images/home/hero.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    // background-image: url('../images/home/hero.jpg');
+    // background-position: center center;
+    // background-repeat: no-repeat;
+    // background-attachment: fixed;
+    // background-size: cover;
     width: 100%;
     height: 57rem;
 
@@ -232,9 +232,9 @@
   /*** End Section Objectives ***/
 
   /*******************************************
-  * Section Events
+  * Section Carousel
   *****************************************/
-  .upcoming-events {
-    
+  .galleria {
+    margin: 0 auto;
   }
-  /*** End Section Objectives ***/
+  /*** End Section Carousel ***/
