@@ -35,7 +35,9 @@
 
     <link rel="stylesheet" href="/styles/full-bg-carousel.css"> 
 
-    <link rel="stylesheet" href="styles/main.css">  
+    <link rel="stylesheet" href="styles/main.css">
+
+    {% block blockStyle %} {% endblock %}
 
     <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
     <!--
@@ -58,11 +60,11 @@ integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
 crossorigin="anonymous"></script>
 
   <!-- build:js scripts/main.min.js -->
-  {% block blockStyleScripts %} {% endblock %}
-
   <script src="scripts/main.js"></script>
-  <script src="scripts/header.js"></script> 
+  <script src="scripts/header.js"></script>
   <!-- endbuild -->
+
+  {% block blockScripts %} {% endblock %}
 
   <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
   <script>
