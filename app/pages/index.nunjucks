@@ -201,4 +201,17 @@
   </style>
 
   <script src="scripts/lib/galleria-1.5.7.min.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      // (function() { 
+        Galleria.loadTheme('scripts/lib/galleria.classic.min.js');
+        Galleria.run('.galleria');
+      // }());
+      
+      // setTimeout(function() {
+        $("body").show();
+      // }, 5000);    
+    });
+  </script>
 {% endblock %}

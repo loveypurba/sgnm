@@ -76,14 +76,4 @@
 
   // http://www.landmarkmlp.com/js-plugin/owl.carousel/demos/custom.html
 
-  $(document).ready(function() {
-    // (function() { 
-      Galleria.loadTheme('scripts/lib/galleria.classic.min.js');
-      Galleria.run('.galleria');
-    // }());
-    
-    // setTimeout(function() {
-      $("body").show();
-    // }, 5000);    
-  });
 })();
