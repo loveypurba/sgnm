@@ -4,3 +4,6 @@ dist/
 app.yaml
 *.html
 app/pages/temp.nunjucks
+
+**/*/.DS_Store
+.DS_Store

@@ -9,11 +9,18 @@
   border: 0;
 }
 
+.test-bd {
+  border: 2px solid red;
+}
+
 .sgnm-hide {
   display: none;
 }
 
 .sgnm {
+
+  height: 100%;
+  
   hr {
     color: $color-red;
     border: 0.3rem solid;
@@ -73,6 +80,7 @@
 
   @media only screen and (min-width: $tablet-breakpoint) {
     font-size: 1.6rem;
+    height: 100%;
   }
 }
 

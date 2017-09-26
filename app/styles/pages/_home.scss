@@ -20,6 +20,7 @@
 
     @media only screen and (min-width: 1320px) {
       min-height: 70rem;
+      height: 100%;
     }
   }
 
@@ -58,14 +59,14 @@
     height: auto;
 
     @media only screen and (min-width: $tablet-breakpoint) {
-      height: 18rem;;
+      height: 18rem;
     }
   }
 
   .hero-widget-container {
     @media only screen and (min-width: $tablet-breakpoint) {
       position: relative;
-      top: -9.5rem;
+      top: -8.5rem;
     }
 
     h3 {
@@ -234,7 +235,5 @@
   /*******************************************
   * Section Carousel
   *****************************************/
-  .galleria {
-    margin: 0 auto;
-  }
+  .galleria{ max-width: 700px; height: 400px; background: #000; margin: 0 auto; }
   /*** End Section Carousel ***/

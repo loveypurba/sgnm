@@ -11,44 +11,64 @@
   
   <main class="sgnm-main">
     <!-- Hero Section -->
-     <section class="hero-section">
+    <section class="hero-section">
       {# Carousel #}
       <ul class="sgnm-cb-slideshow">
         <li>
           <span>Image 01</span>
-          <div>
-            <h3>Its a single thought which can make you feel closer to the Almighty. Just think about him, and you are there.</h3>
-          </div>
+          <p class="align-right">ਜੀਵਨ ਸਿਰਫ ਧੰਨ ਇਕੱਠਾ ਕਰਨ  ਿਵੱਚ ਹੀ ਨਾ ਲੰਘ ਜਾਵੈ,<br />
+            ਤੁਹਾਡਾ ਜੀਵਨ ਹੀ ਧੰਨ ਹੋ ਜਾਵੈ ਇਸ  ਿਵੱਚ ਲਗ ਜਾਵੋ |
+            <br /><br /><br />
+            ਮਾਤਾ ਬਲਜੀਤ ਕੌਰ ਜੀ ਖਾਲਸਾ</p>
         </li>
         <li>
           <span>Image 02</span>
-          <div>
-            <h3>Waheguru Ji Ka Khalsa, Waheguru Ji Ki Fateh</h3>
-          </div>
+          <p class="align-right">ਜਿਸ ਨੂ ਜ਼ਿੰਦਗੀ ਦੇ ਹਰ ਹਾਲਾਤ ਿਵੱਚ<br />
+                                ਮੁਸਕਰਾਉਣਾ ਆ ਗਿਆ, <br />
+                                ਸਮਝ ਲਵੋ ਉਸ ਨੂੰ <br />
+                                ਜੀਵਨ ਜੀਊਣਾ ਆ ਗਿਆ |
+            <br /><br /><br />
+            ਮਾਤਾ ਬਲਜੀਤ ਕੌਰ ਜੀ ਖਾਲਸਾ</p>
         </li>
         <li>
           <span>Image 03</span>
-          <div>
-            <h3>Waheguru Ji Ka Khalsa, Waheguru Ji Ki Fateh</h3>
-          </div>
+          <p class="align-right">ਖੁਸ਼ ਉਹ ਨਹੀਂ ਜਿਸਦੀਆਂ ਸਾਰੀਆਂ <br />
+          ਇੱਛਾਵਾਂ ਪੂਰੀਆ ਹੁੰਦੀਆਂ ਹੋਣ,<br />
+          ਖੁਸ਼ ਤਾਂ ਓਹੀ ਹੈ ਜਿਸਦੀ  <br />
+          ਕੋਈ ਇੱਛਾ ਹੀ ਨਹੀਂ | 
+            <br /><br /><br />
+            ਮਾਤਾ ਬਲਜੀਤ ਕੌਰ ਜੀ ਖਾਲਸਾ</p>
         </li>
         <li>
           <span>Image 04</span>
-          <div>
-            <h3>Waheguru Ji Ka Khalsa, Waheguru Ji Ki Fateh</h3>
-          </div>
+          <p class="align-right">ਗੁਰਮਤ ਦੀ ਸਾਧਨਾ ਸਾਰੀ <br />
+          ਮਨ ਨੂੰ ਸਾਧਣਾ ਹੈ |
+            <br /><br /><br />
+            ਮਾਤਾ ਬਲਜੀਤ ਕੌਰ ਜੀ ਖਾਲਸਾ</p>
         </li>
         <li>
           <span>Image 05</span>
-          <div>
-            <h3>Waheguru Ji Ka Khalsa, Waheguru Ji Ki Fateh</h3>
-          </div>
+          <p class="align-left">ਪਰਮਾਤਮਾ ਦੇ ਗੁੱਝੇ ਰਹੱਸ <br />
+          ਜਾਨਣਾ ਚਾਹੁੰਦੇ ਹੋ ਤਾਂ <br />
+          ਕਦੇ ਵੀ ਅੰਮ੍ਰਿਤ ਵੇਲੇ ਨੂੰ ਅਾਪਣੇ <br />
+          ਜੀਵਨ ਿਵੱਚੋ ਜਾਣ ਨਾ ਿਦਓ |
+            <br /><br /><br />
+            ਮਾਤਾ ਬਲਜੀਤ ਕੌਰ ਜੀ ਖਾਲਸਾ</p>
         </li>
         <li>
           <span>Image 06</span>
-          <div>
-            <h3>Waheguru Ji Ka Khalsa, Waheguru Ji Ki Fateh</h3>
-          </div>
+          <p class="align-right">ਜੋ ਦੂਸਰਿਆਂ ਨੂੰ ਬਦਲੇ ਉਹ ‘ਪਰੇਸ਼ਾਨ’ <br />
+          ਜੋ ਆਪਣੇ ਆਪ ਨੂੰ ਬਦਲੇ ਉਹ ‘ਮਹਾਨ’ |
+            <br /><br /><br />
+            ਮਾਤਾ ਬਲਜੀਤ ਕੌਰ ਜੀ ਖਾਲਸਾ</p>
+        </li>
+
+        <li>
+          <span>Image 07</span>
+          <p class="align-left">ਪਰਮਾਤਮਾ ਅਤੇ ਸਾਡੇ ਵਿਚਕਾਰ ਦੂਰੀ ਪਤਾ ਕਿੰਨੀ ਹੈ? <br />
+          ‘ਸਿਰਫ ਇੱਕ ਵਿਚਾਰ ਦੀ’ |
+            <br /><br /><br />
+            ਮਾਤਾ ਬਲਜੀਤ ਕੌਰ ਜੀ ਖਾਲਸਾ</p>
         </li>
       </ul> 
       
@@ -183,10 +203,10 @@
 {% endblock %}
 
 {% block blockStyle %}
-  <style>
+  {# <style>
     .galleria { max-width: 700px; height: 400px; background: #000;}
     #imageSlider { visibility: hidden; }
-  </style>
+  </style> #}
 {% endblock %}
 
 {% block blockScripts %}
@@ -194,97 +214,98 @@
   <script src="http://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/galleria.min.js"></script>
   <script>
      $(document).ready(function() { 
-      // Galleria.loadTheme('scripts/lib/galleria.classic.min.js');
-      Galleria.loadTheme('http://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/themes/classic/galleria.classic.min.js');
-      
-      /*Galleria.configure({
-          thumbnails: "lazy"
-      });*/
+        // Galleria.loadTheme('scripts/lib/galleria.classic.min.js');
+        Galleria.loadTheme('http://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/themes/classic/galleria.classic.min.js');
+        
+        /*Galleria.configure({
+            thumbnails: "lazy"
+        });*/
 
-      const data = [
-        {
-          thumb: 'images/home/gallery/1_tn.jpg',
-          image: 'images/home/gallery/1.jpg'
-        },
-        {
-          thumb: 'images/home/gallery/2_tn.jpg',
-          image: 'images/home/gallery/2.jpg'
-        },
-        {
-          thumb: 'images/home/gallery/3_tn.jpg',
-          image: 'images/home/gallery/3.jpg'
-        },
-        {
-          thumb: 'images/home/gallery/4_tn.jpg',
-          image: 'images/home/gallery/4.jpg'
-        },
-        {
-          thumb: 'images/home/gallery/5_tn.jpg',
-          image: 'images/home/gallery/5.jpg'
-        },
-        {
-          thumb: 'images/home/gallery/6_tn.jpg',
-          image: 'images/home/gallery/6.jpg'
-        },
-        {
-          thumb: 'images/home/gallery/7_tn.jpg',
-          image: 'images/home/gallery/7.jpg'
-        },
-        {
-          thumb: 'images/home/gallery/8_tn.jpg',
-          image: 'images/home/gallery/8.jpg'
-        },
-        {
-          thumb: 'images/home/gallery/9_tn.jpg',
-          image: 'images/home/gallery/9.jpg'
-        },
-        {
-          thumb: 'images/home/gallery/10_tn.jpg',
-          image: 'images/home/gallery/10.jpg'
-        },
-        {
-          thumb: 'images/home/gallery/11_tn.jpg',
-          image: 'images/home/gallery/11.jpg'
-        },
-        {
-          thumb: 'images/home/gallery/12_tn.jpg',
-          image: 'images/home/gallery/12.jpg'
-        },
-        {
-          thumb: 'images/home/gallery/13_tn.jpg',
-          image: 'images/home/gallery/13.jpg'
-        },
-        {
-          thumb: 'images/home/gallery/14_tn.jpg',
-          image: 'images/home/gallery/14.jpg'
-        },
-        {
-          thumb: 'images/home/gallery/15_tn.jpg',
-          image: 'images/home/gallery/15.jpg'
-        },
-        {
-          thumb: 'images/home/gallery/16_tn.jpg',
-          image: 'images/home/gallery/16.jpg'
-        },
-        {
-          thumb: 'images/home/gallery/17_tn.jpg',
-          image: 'images/home/gallery/17.jpg'
-        },
-        {
-          thumb: 'images/home/gallery/18_tn.jpg',
-          image: 'images/home/gallery/18.jpg'
-        },
-        {
-          thumb: 'images/home/gallery/19_tn.jpg',
-          image: 'images/home/gallery/19.jpg'
-        }
-      ];
+        let data = [
+          {
+            thumb: 'images/home/gallery/1_tn.jpg',
+            image: 'images/home/gallery/1.jpg'
+          },
+          {
+            thumb: 'images/home/gallery/2_tn.jpg',
+            image: 'images/home/gallery/2.jpg'
+          },
+          {
+            thumb: 'images/home/gallery/3_tn.jpg',
+            image: 'images/home/gallery/3.jpg'
+          },
+          {
+            thumb: 'images/home/gallery/4_tn.jpg',
+            image: 'images/home/gallery/4.jpg'
+          },
+          {
+            thumb: 'images/home/gallery/5_tn.jpg',
+            image: 'images/home/gallery/5.jpg'
+          },
+          {
+            thumb: 'images/home/gallery/6_tn.jpg',
+            image: 'images/home/gallery/6.jpg'
+          },
+          {
+            thumb: 'images/home/gallery/7_tn.jpg',
+            image: 'images/home/gallery/7.jpg'
+          },
+          {
+            thumb: 'images/home/gallery/8_tn.jpg',
+            image: 'images/home/gallery/8.jpg'
+          },
+          {
+            thumb: 'images/home/gallery/9_tn.jpg',
+            image: 'images/home/gallery/9.jpg'
+          },
+          {
+            thumb: 'images/home/gallery/10_tn.jpg',
+            image: 'images/home/gallery/10.jpg'
+          },
+          {
+            thumb: 'images/home/gallery/11_tn.jpg',
+            image: 'images/home/gallery/11.jpg'
+          },
+          {
+            thumb: 'images/home/gallery/12_tn.jpg',
+            image: 'images/home/gallery/12.jpg'
+          },
+          {
+            thumb: 'images/home/gallery/13_tn.jpg',
+            image: 'images/home/gallery/13.jpg'
+          }
+          {# ,
+          {
+            thumb: 'images/home/gallery/14_tn.jpg',
+            image: 'images/home/gallery/14.jpg'
+          },
+          {
+            thumb: 'images/home/gallery/15_tn.jpg',
+            image: 'images/home/gallery/15.jpg'
+          },
+          {
+            thumb: 'images/home/gallery/16_tn.jpg',
+            image: 'images/home/gallery/16.jpg'
+          },
+          {
+            thumb: 'images/home/gallery/17_tn.jpg',
+            image: 'images/home/gallery/17.jpg'
+          },
+          {
+            thumb: 'images/home/gallery/18_tn.jpg',
+            image: 'images/home/gallery/18.jpg'
+          },
+          {
+            thumb: 'images/home/gallery/19_tn.jpg',
+            image: 'images/home/gallery/19.jpg'
+          } #}
+        ];
 
-      Galleria.run('#imageSlider', {
-          dataSource: data
-      });
-      
-      $('#imageSlider').css('visibility', 'visible');
+        Galleria.run('#imageSlider', {
+            dataSource: data
+        });
+        
+        $('#imageSlider').css('visibility', 'visible');
      }); 
   </script>
 {% endblock %}
