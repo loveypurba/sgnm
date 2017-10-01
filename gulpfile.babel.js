@@ -84,10 +84,11 @@ gulp.task('styles', () => {
 
   // For best performance, don't add Sass partials to `gulp.src`
   return gulp.src([
-    'app/styles/**/*.scss',
-    'app/styles/**/*.css'
+    'app/pages/**/*.scss',
+    'app/pages/**/*.css'
   ])
     .pipe($.newer('.tmp/styles'))
+    .pipe($.flatten())
     .pipe($.sourcemaps.init())
     .pipe($.sass({
       precision: 10
@@ -95,7 +96,7 @@ gulp.task('styles', () => {
     .pipe($.autoprefixer(AUTOPREFIXER_BROWSERS))
     .pipe(gulp.dest('.tmp/styles'))
     // Concatenate and minify styles
-    .pipe($.if('*.css', $.cssnano()))
+    // .pipe($.if('*.css', $.cssnano()))
     .pipe($.size({title: 'styles'}))
     .pipe($.sourcemaps.write('./'))
     .pipe(gulp.dest('dist/styles'))
@@ -132,8 +133,12 @@ gulp.task('nunjucks', () => {
   // Gets .html and .nunjucks files in pages
   return gulp.src('app/pages/**/*.+(nunjucks)')
   // Renders template with nunjucks
+  .pipe($.flatten())
   .pipe($.nunjucksRender({
-      path: ['app/templates']
+      path: [
+        'app/pages',
+        'app/commonTemplates'
+      ]
     }))
   // output files in app folder
   .pipe(gulp.dest('app'))
@@ -184,6 +189,9 @@ gulp.task('serve', ['nunjucks', 'scripts', 'styles'], () => {
 
   // gulp.watch(['app/**/*.html'], reload);
   gulp.watch(['app/**/*.nunjucks'], ['nunjucks', reload]);
+  // both 'app/pages/**/*' and 'app/styles/**/*' need to be watched
+  // but this has HIGH performance cost
+  gulp.watch(['app/pages/**/*.{scss,css}'], ['styles', reload]);
   gulp.watch(['app/styles/**/*.{scss,css}'], ['styles', reload]);
   gulp.watch(['app/scripts/**/*.js'], ['lint', 'scripts', reload]);
   gulp.watch(['app/images/**/*'], reload);
@@ -254,7 +262,7 @@ gulp.task('generate-service-worker', ['copy-sw-scripts'], () => {
       // Add/remove glob patterns to match your directory setup.
       `${rootDir}/images/**/*`,
       `${rootDir}/scripts/**/*.js`,
-      `${rootDir}/styles/**/*.css`,
+      `${rootDir}/pages/**/*.css`,
       `${rootDir}/*.{html,json}`
     ],
     // Translates a static file path to the relative URL that it's served from.

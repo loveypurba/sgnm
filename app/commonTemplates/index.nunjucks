@@ -8,9 +8,9 @@
 
   <main class="sgnm-main">
     <!-- Hero Section -->
-    <section class="hero-section">
+    <section class="sgnm-hero-section">
       <section class="sgnm-overlay">
-        <section class="hero-section-content">
+        <section class="sgnm-hero-section-content">
           <p>Waheguru Ji Ka Khalsa</p>
           <p>Waheguru Ji Ki Fateh</p>
         </section>
