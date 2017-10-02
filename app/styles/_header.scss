@@ -11,14 +11,27 @@
     z-index: 10;
   }
 
+  &-primary-header {
+    position: absolute;
+    width: 100%;
+    max-width: 1100px;
+    top: 0;
+  }
   /*-----------------------------------
   * Primary Logo
   -----------------------------------*/
     &-primary-logo {
-      width: 100%;
-      max-width: 15rem;
-      margin-top: 20px;
-      margin-left: 10px;
+      width: 13rem;
+      position: absolute;
+      left: 15px;
+      left: 1.5rem;
+      top: 15px;
+      top: 1.5rem;
+
+      @media only screen and (min-width: 412px) {
+        width: 15rem;
+      }
+
       @media only screen and (min-width: $primary-navigation-breakpoint) {
         max-width: 17rem;
       }
@@ -35,7 +48,7 @@
       border-radius: 4px;
       background-color: transparent;
       float: right;
-      margin-top: 62px;
+      margin-top: 45px;
       margin-right: 33px;
       z-index: 11;
 

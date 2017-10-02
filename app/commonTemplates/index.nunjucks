@@ -2,7 +2,7 @@
 
 {% block content %}
 
-  {% set headerClass = "primary-header" %}
+  {% set headerClass = "sgnm-primary-header" %}
   {% set noOverlay = "true" %}
   {% include "partials/header.nunjucks" %}
 

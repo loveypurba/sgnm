@@ -1,0 +1,23 @@
+.sgnm-hero-section {
+
+  background-image: url('../images/home/mob/hero-c.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  min-height: 55rem;
+  position: relative;
+
+  &:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    content: '';
+    background: transparent url(../images/home/hero/pattern.png) repeat top left; 
+  }
+}
+
+@import 'app/pages/index/components/sectionHero-v2/bachans-list';

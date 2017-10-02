@@ -5,7 +5,7 @@
 {% endblock %}
 
 {% block header %}
-  {% set headerClass = "primary-header" %}
+  {% set headerClass = "sgnm-primary-header" %}
   {% set noOverlay = "true" %}
   {% set isHomeSelected = true %}
   {% include "partials/header.nunjucks" %}  
@@ -18,7 +18,7 @@
     {# Hero Section  #}
       {%
         set config = {
-          'activeHeroSectionVer': 1,
+          'activeHeroSectionVer': 2,
 
           'meta-heroSectionVer-1': 'Full page Carousal with text',
 
@@ -26,7 +26,7 @@
         }
       %}
       {%
-        include "index/templates/hero-section-v" + config.activeHeroSectionVer + ".nunjucks"
+        include "index/components/sectionHero-v" + config.activeHeroSectionVer + "/template.nunjucks"
       %}
     {# End: Hero Section  #}
 
@@ -241,6 +241,6 @@
         });
         
         $('#imageSlider').css('visibility', 'visible');
-     }); 
+     });
   </script>
 {% endblock %}

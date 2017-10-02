@@ -1,0 +1,88 @@
+$num-of-items: 7;
+$animation-delay: 6s;
+$total-time-to-animate: $animation-delay * $num-of-items;
+ 
+.sgnm-bachans {
+
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+
+  &-bachan {
+    opacity: 0;
+    position: absolute;
+    width: 90%;
+    bottom: 10px;
+    left: 5%;
+    color: $color-white;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    font-size: 2.2rem;
+
+    background: rgba(119, 41, 41, 0.46);
+
+    line-height: 3rem;
+    padding: 0 2rem;
+
+    
+    animation: sgnmTitleAnimation $total-time-to-animate linear infinite 0s;
+    
+    &-desc {
+      margin: 15px 0;
+      margin: 1.5rem 0;
+    }
+
+    &-author {
+      margin: 15px 0;
+      margin: 1.5rem 0;
+    }
+
+    @media only screen and (min-width: $primary-navigation-breakpoint) {
+      font-size: 3.5rem;
+      line-height: 6rem;
+      padding: 1rem;
+    }
+  }
+
+  @for $i from 2 through $num-of-items {
+    
+    &-bachan:nth-child( #{$i} ) {
+      animation-delay: ( $animation-delay * ( $i - 1 ) ); 
+    } 
+  }
+
+}
+
+@media only screen and ( min-width: 1140px ) {
+  .sgnm-cb-slideshow li .d-align-left { 
+      text-align: center;
+      top: 45%;
+      left: 10%;
+      width: 30%;
+  }
+
+  .sgnm-cb-slideshow li .d-align-right { 
+      text-align: center;
+      top: 36%;
+      right: 6%;
+      width: 30%;
+  }
+}
+
+/* Animation for the title */
+@keyframes sgnmTitleAnimation { 
+  0% { opacity: 0; }
+  8% { opacity: 1; }
+  17% { opacity: 1; }
+  19% { opacity: 0; }
+  100% { opacity: 0 }
+}
+/* Show at least something when animations not supported */
+.no-cssanimations .sgnm-cb-slideshow li span {
+  opacity: 1;
+}
