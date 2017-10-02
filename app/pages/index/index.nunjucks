@@ -57,7 +57,7 @@
 
           <div>
             <h3>Sewa</h3>
-            <p>Dunera | Widow sewa</p>
+            <p class="sgnm-center">Dunera | Widow sewa</p>
             <a href="/sewa.html" class="sgnm-button">View Details</a>
           </div>
         </section>
@@ -69,7 +69,7 @@
           </div>
           <div>
             <h3>Make a donation</h3>
-            <p>We serve humanity</p>
+            <p class="sgnm-center">We serve humanity</p>
             <a href="/donate.html" class="sgnm-button">Donate</a>
           </div>
         </section>

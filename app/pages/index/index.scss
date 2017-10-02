@@ -33,15 +33,15 @@
 
       // @media only screen and (min-width: $tablet-breakpoint) {
       @media only screen and (min-width: 1068px) {
-        height: 18rem;
+        min-height: 18rem;
       }
     }
 
     .hero-widget-container {
       // @media only screen and (min-width: $tablet-breakpoint+1) {
-      @media only screen and (min-width: 1068px) {
+      @media only screen and (min-width: 972px) {
         position: relative;
-        top: -8.5rem;
+        top: -3.5rem;
       }
 
       h3 {
@@ -62,7 +62,8 @@
       text-align: center;
       padding: 3.1rem 4.1rem;
 
-      @media only screen and (min-width: $tablet-breakpoint+1) {
+      // @media only screen and (min-width: $tablet-breakpoint) {
+      @media only screen and (min-width: 972px) {
         width: 32.4%;
         display: inline-block;
         margin: 0 0.2rem;

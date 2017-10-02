@@ -8,26 +8,60 @@ $total-time-to-animate: $animation-delay * $num-of-items;
   position: relative;
   margin: 0 auto;
   height: 100vh;
+  max-height: 736px;
+  max-height: 73.6rem;
 
   @media only screen and (min-width: 768px) {
     height: 90vh;
   }
+
+  background-size: cover;
+  background-color:	#EEEDF5;
+
+  @media only screen and (min-width: 431px) {
+    background-size: 430px auto;
+  }
+
+  
+  background-image: url('../images/home/mob/hero-c.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  
+  width: 100%;
+  height: 100vh;
+  min-height: 520px;
+  min-height: 52rem;
+  max-height: 736px;
+  max-height: 73.6rem;
+  position: relative;
+
+  @media only screen and (min-width: 768px) and (min-height: 830px) {
+    background-image: url('../images/home/mob/hero-768.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 90vh;
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 971px) {
+    background-size: 770px auto;
+  }
+
+  @media only screen and (min-width: 972px) and (min-height: 830px) {
+    background-position: left center;
+    background-size: 600px;
+  }
+
 }
  
 .sgnm-bachans {
 
   margin: 0;
   padding: 0;
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
-  height: 50%;
-
-  @media only screen and (min-width: 1024px) {
-    right: 0;
-    width: 50%;
-    height: 100%;
-  }
+  height: 100%;
+  min-height: 520px;  
 
   &-bachan {
     opacity: 0;
@@ -40,7 +74,7 @@ $total-time-to-animate: $animation-delay * $num-of-items;
     text-align: center;
     text-transform: uppercase;
 
-    font-size: 2.2rem;
+    font-size: 1.8rem;
 
     // background: rgba(119, 41, 41, 0.46);
     background: rgba(229, 99, 63, 0.9);
@@ -50,6 +84,24 @@ $total-time-to-animate: $animation-delay * $num-of-items;
 
     
     animation: sgnmTitleAnimation $total-time-to-animate linear infinite 0s;
+
+    // @media only screen and (min-width: $primary-navigation-breakpoint) {
+    @media only screen and (min-width: 768px) {
+      font-size: 2.5rem;
+      line-height: 3.5rem;
+      padding: 0.5rem;
+      // bottom: 10%;
+    }
+
+    @media only screen and (min-width: 972px) {
+      width: 40%;
+      top: 50%;
+      right: 20px;
+      left: auto;
+      bottom: auto;
+      padding: 2rem;
+      border-radius: 10px;
+    }
     
     &-desc {
       margin: 5px 0;
@@ -59,29 +111,10 @@ $total-time-to-animate: $animation-delay * $num-of-items;
     &-author {
       margin: 5px 0;
       margin: 0.5rem 0;
-      font-size: 20px;
-      font-size: 2rem;
+      // font-size: 20px;
+      // font-size: 2rem;
     }
 
-    // @media only screen and (min-width: $primary-navigation-breakpoint) {
-    @media only screen and (min-width: 768px) {
-      font-size: 3.5rem;
-      line-height: 5rem;
-      padding: 1rem;
-      // bottom: 10%;
-    }
-
-    @media only screen and (min-width: 1024px) {
-      width: 70%;
-      top: 25%;
-      right: 50px;
-      left: auto;
-      bottom: auto;
-    }
-
-    @media only screen and (min-width: 1280px) {
-      top: 30%;
-    }
   }
 
   @for $i from 2 through $num-of-items {
