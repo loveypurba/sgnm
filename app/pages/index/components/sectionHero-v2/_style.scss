@@ -9,6 +9,19 @@
   min-height: 55rem;
   position: relative;
 
+  @media only screen and (min-width: 768px) {
+    background-image: url('../images/home/mob/hero-768.jpg');
+    height: 90vh;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    background-image: url('../images/home/hero-1024.jpg');
+  }
+
+  @media only screen and (min-width: 1366px) {
+    background-image: url('../images/home/hero-1920.jpg');
+  }
+
   &:after {
     position: absolute;
     width: 100%;

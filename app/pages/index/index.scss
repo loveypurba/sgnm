@@ -31,13 +31,15 @@
     .tri-widgets {
       height: auto;
 
-      @media only screen and (min-width: $tablet-breakpoint) {
+      // @media only screen and (min-width: $tablet-breakpoint) {
+      @media only screen and (min-width: 1068px) {
         height: 18rem;
       }
     }
 
     .hero-widget-container {
-      @media only screen and (min-width: $tablet-breakpoint) {
+      // @media only screen and (min-width: $tablet-breakpoint+1) {
+      @media only screen and (min-width: 1068px) {
         position: relative;
         top: -8.5rem;
       }
@@ -60,7 +62,7 @@
       text-align: center;
       padding: 3.1rem 4.1rem;
 
-      @media only screen and (min-width: $tablet-breakpoint) {
+      @media only screen and (min-width: $tablet-breakpoint+1) {
         width: 32.4%;
         display: inline-block;
         margin: 0 0.2rem;
