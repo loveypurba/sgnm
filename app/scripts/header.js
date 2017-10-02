@@ -1,12 +1,11 @@
-(function() {
-  var btnPrimaryNavigation = document.getElementById( 'btnPrimaryNavigation' );
-  var primaryNavigation = document.getElementById
+(function () {
+  var $btnPrimaryNavigation = $( '#btnPrimaryNavigation' );
 
-  var toggleNavigationMenu = function(ev) {
-    var primaryNavigation = document.getElementById('primaryNavigation');
-
-    primaryNavigation.style.display = (primaryNavigation.style.display === 'none') ? 'block' : 'none' ;
+  var toggleNavigationMenu = function() {
+    var $primaryNavigation = $('#primaryNavigation');
+    $primaryNavigation.toggle();
   }
 
-  btnPrimaryNavigation.addEventListener('click', toggleNavigationMenu)
-})();
+  $btnPrimaryNavigation.on( 'click', toggleNavigationMenu );
+
+}());
