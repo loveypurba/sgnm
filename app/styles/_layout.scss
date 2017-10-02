@@ -1,16 +1,7 @@
-// html, body, .sgnm, .sgnm-main {
 html, body, .sgnm {
   height: 100%;
 }
-// .sgnm-main {
-//   min-height: 60rem;
-// }
-.sgnm-primary-header {
-  position: absolute;
-  width: 100%;
-  max-width: 1100px;
-  top: 0;
-}
+
 .sgnm-header-container {
   max-width: $container-width;
   width: 100%;
