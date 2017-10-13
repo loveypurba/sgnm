@@ -1,0 +1,32 @@
+.sgnm-hero-section {
+
+  background-color:	#EEEDF5;
+
+  &__bg-shade {
+    &:after {
+      position: absolute;
+
+      width: 100%;
+      min-width: 320px;
+
+      height: 100vh;
+      min-height: 600px;
+      min-height: 60rem;
+      max-height: 736px;
+      max-height: 73.6rem;
+
+      top: 0px;
+      left: 0px;
+      content: '';
+      background: transparent url(../images/home/hero/pattern.png) repeat top left;
+
+      @media only screen and ( min-width: 550px ) {
+        min-height: 650px;
+        min-height: 65rem;
+      }
+    }
+  }
+    
+}
+
+@import 'app/pages/index/components/sectionHero-v2/bachans-list';

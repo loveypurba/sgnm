@@ -25,8 +25,12 @@
           'meta-heroSectionVer-2': 'Static Image with dynamic text'
         }
       %}
+      {# 
+        e.g.:   
+            include "index/components/sectionHero-v1/sectionHero-v2.nunjucks"
+      #}
       {%
-        include "index/components/sectionHero-v" + config.activeHeroSectionVer + "/template.nunjucks"
+        include "index/components/sectionHero-v" + config.activeHeroSectionVer + "/" + "sectionHero-v" + config.activeHeroSectionVer +".nunjucks"
       %}
     {# End: Hero Section  #}
 

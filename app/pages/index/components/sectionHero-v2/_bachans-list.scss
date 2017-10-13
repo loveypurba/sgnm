@@ -3,52 +3,44 @@ $animation-delay: 10s;
 $total-time-to-animate: $animation-delay * $num-of-items;
 
 .container-sgnm-bachans {
-  width: 100%;
-  max-width: 1200px;
+ 
   position: relative;
   margin: 0 auto;
+
+  width: 100%;
+  max-width: 1200px;
+
   height: 100vh;
+
+  min-height: 600px;
+  min-height: 60rem;
+
   max-height: 736px;
   max-height: 73.6rem;
-
-  @media only screen and (min-width: 768px) {
-    height: 90vh;
-  }
 
   background-size: cover;
   background-color:	#EEEDF5;
 
-  @media only screen and (min-width: 431px) {
-    background-size: 430px auto;
-  }
-
-  
-  background-image: url('../images/home/mob/hero-c.jpg');
+  // background-image: url('../images/home/mob/hero-c.jpg');
+  background-image: url('../images/home/mob/hero-768.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   
-  width: 100%;
-  height: 100vh;
-  min-height: 520px;
-  min-height: 52rem;
-  max-height: 736px;
-  max-height: 73.6rem;
-  position: relative;
-
-  @media only screen and (min-width: 768px) and (min-height: 830px) {
-    background-image: url('../images/home/mob/hero-768.jpg');
-    background-size: cover;
-    background-position: center center;
-    height: 90vh;
+  @media only screen and ( min-width: 550px ) {
+    // background-image: url('../images/home/mob/hero-768.jpg');
+    min-height: 650px;
+    min-height: 65rem;
   }
 
-  @media only screen and (min-width: 768px) and (max-width: 971px) {
-    background-size: 770px auto;
+  @media only screen and ( min-width: 809px ) {
+    background-size: 810px auto;
   }
 
-  @media only screen and (min-width: 972px) and (min-height: 830px) {
-    background-position: left center;
-    background-size: 600px;
+  @media all and ( min-width: 972px ) {
+    background-position: 10%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 10%;
   }
 
 }
@@ -76,7 +68,6 @@ $total-time-to-animate: $animation-delay * $num-of-items;
 
     font-size: 1.8rem;
 
-    // background: rgba(119, 41, 41, 0.46);
     background: rgba(229, 99, 63, 0.9);
 
     line-height: 3rem;
@@ -85,15 +76,13 @@ $total-time-to-animate: $animation-delay * $num-of-items;
     
     animation: sgnmTitleAnimation $total-time-to-animate linear infinite 0s;
 
-    // @media only screen and (min-width: $primary-navigation-breakpoint) {
-    @media only screen and (min-width: 768px) {
+    @media only screen and ( min-width: 768px ) {
       font-size: 2.5rem;
       line-height: 3.5rem;
       padding: 0.5rem;
-      // bottom: 10%;
     }
 
-    @media only screen and (min-width: 972px) {
+    @media only screen and ( min-width: 972px ) {
       width: 40%;
       top: 50%;
       right: 20px;

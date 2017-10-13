@@ -1,5 +1,5 @@
 {# Fixed Page Hero Image #}
-<section class="sgnm-hero-section">
+<section class="sgnm-hero-section sgnm-hero-section__bg-shade">
   <div class="container-sgnm-bachans">
     <ul class="sgnm-bachans">
       {% 
