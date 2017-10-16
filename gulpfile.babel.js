@@ -87,20 +87,22 @@ gulp.task('styles', () => {
     'app/pages/**/*.scss',
     'app/pages/**/*.css'
   ])
-    .pipe($.newer('.tmp/styles'))
-    .pipe($.flatten())
-    .pipe($.sourcemaps.init())
-    .pipe($.sass({
-      precision: 10
-    }).on('error', $.sass.logError))
-    .pipe($.autoprefixer(AUTOPREFIXER_BROWSERS))
-    .pipe(gulp.dest('.tmp/styles'))
+    .pipe( $.newer('.tmp/styles') )
+    .pipe( $.flatten() )
+    .pipe( $.sourcemaps.init() )
+    .pipe( 
+      $.sass({
+        precision: 10
+      }).on( 'error', $.sass.logError ) 
+    )
+    .pipe( $.autoprefixer( AUTOPREFIXER_BROWSERS ) )
+    .pipe( gulp.dest( '.tmp/styles' ) )
     // Concatenate and minify styles
     // .pipe($.if('*.css', $.cssnano()))
-    .pipe($.size({title: 'styles'}))
-    .pipe($.sourcemaps.write('./'))
-    .pipe(gulp.dest('dist/styles'))
-    .pipe(gulp.dest('.tmp/styles'));
+    .pipe( $.size( { title: 'styles' } ) )
+    .pipe( $.sourcemaps.write( './' ) )
+    .pipe( gulp.dest( 'dist/styles' ) )
+    .pipe( gulp.dest( '.tmp/styles' ) );
 });
 
 // Concatenate and minify JavaScript. Optionally transpiles ES2015 code to ES5.

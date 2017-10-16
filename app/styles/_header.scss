@@ -143,39 +143,44 @@
   /*-----------------------------------
   * Primary Navigation with Background
   -----------------------------------*/
-  &-header-bg {
-    background-color: $color-black;
-    width: 100%;
-    height: 20rem;
-  }
+    &-header-bg {
+      background-color: $color-black;
+      width: 100%;
+      height: 20rem;
 
-  &-header-about {
-    background: url('../images/about/header-bg-about.jpg') no-repeat;
-    background-position: center center;
-    background-size: cover;
-  }
+      .sgnm-header-container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+    }
 
-  &-header-gallery {
-    background: url('../images/gallery/header-bg-gallery.jpg') no-repeat;
-    background-position: center center;
-    background-size: cover;
-  }
+    &-header-about {
+      background: url('../images/about/header-bg-about.jpg') no-repeat;
+      background-position: center center;
+      background-size: cover;
+    }
 
-  &-header-events {
-    background: url('../images/events/header-bg-events.jpg') no-repeat;
-    background-position: center center;
-    background-size: cover;
-  }
+    &-header-gallery {
+      background: url('../images/gallery/header-bg-gallery.jpg') no-repeat;
+      background-position: center center;
+      background-size: cover;
+    }
 
-  &-header-sewa {
-    background: url('../images/sewa/header-bg-sewa.jpg') no-repeat;
-    background-position: center center;
-    background-size: cover;
-  }
+    &-header-events {
+      background: url('../images/events/header-bg-events.jpg') no-repeat;
+      background-position: center center;
+      background-size: cover;
+    }
 
-  &-header-contact {
-    background: url('../images/contact/header-bg-contact.jpg') no-repeat;
-    background-position: center center;
-    background-size: cover;
-  }
+    &-header-sewa {
+      background: url('../images/sewa/header-bg-sewa.jpg') no-repeat;
+      background-position: center center;
+      background-size: cover;
+    }
+
+    &-header-contact {
+      background: url('../images/contact/header-bg-contact.jpg') no-repeat;
+      background-position: center center;
+      background-size: cover;
+    }
 }
