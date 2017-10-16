@@ -1,3 +1,11 @@
 html, body, .sgnm {
   height: 100%;
 }
+
+.sgnm {
+  overflow: hidden;
+}
+
+#page {
+  overflow: auto;
+}

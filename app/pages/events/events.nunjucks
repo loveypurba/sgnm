@@ -17,146 +17,180 @@
   {# Upcoming Events #}
   <section class="sgnm-upcoming-events sgnm-container">
     <h1 class="sgnm-center">Upcoming Events</h1>
+
     <hr>
 
     <div class="sgnm-events-container">
 
-      {# Event #}
+      {# Event 1 #}
       <div class="sgnm-event">
         <div class="sgnm-event-section-left">
-          {#<span class="sgnm-top">17-23 July</span>#}
-          <img src="images/events/city/durby.jpg" alt="Location Durby" class="sgnm-event-img">
+          <img src="images/events/city/sangat.jpg" alt="Location Livermore, USA" class="sgnm-event-img">
         </div>
 
         <div class="sgnm-event-section-right">
-          <div class="sgnm-event-section-location">Durby</div>
-          <div>17-23 July, 2017</div>
+          <div class="sgnm-event-section-location">Livermore, USA</div>
+          <div>30 Oct - 5 Nov, 2017</div>
+
+          <br />
+
           <div>Venue:</div>
+          <div>Gurudwara Tri Valley Sikh Center, Livermore</div>
+          <div>2089 N Livermore Ave</div>
+          <div>Livermore, CA 94551 USA</div>
 
           <br>
 
-          <div>Gurudwara Sri Guru Singh Sabha</div>
-          <div>Durby</div>
-          <br>
           <div>Time: 4:00 am to 6:00 am</div>
-          <br>
-          <div>FREE registration will be done at Gurudwara Sahib on 15th and 16th July, 2017</div>
-          <div>Register online or call 9999999999, 8888888888</div>
+          
+          <p>FREE registration will also be done at Gurudwara Sahib on 28th & 29th Oct, 2017</p>
 
-          <a href="/register.html" class="sgnm-button sgnm-event-button">Register</a>
+          <div>
+            <a href="/register.html?seq=0" target="_blank">Register</a>
+             or Call 650-804-4859, 1604-783-5911
+          </div>
+
+          <a href="/register.html?seq=0" class="sgnm-button sgnm-event-button" target="_blank">Register</a>
         </div>
         <div class="sgnm-cb"></div>
       </div>
 
-      {# Event #}
+      {# Event 2 #}
       <div class="sgnm-event">
         <div class="sgnm-event-section-left">
-          {#<span class="sgnm-top">17-23 July</span>#}
-          <img src="images/events/city/durby.jpg" alt="Location Durby" class="sgnm-event-img">
+          <img src="images/events/city/sangat.jpg" alt="Location Tracy, USA" class="sgnm-event-img">
         </div>
 
         <div class="sgnm-event-section-right">
-          <div class="sgnm-event-section-location">Durby</div>
-          <div>17-23 July, 2017</div>
+          <div class="sgnm-event-section-location">Tracy, USA</div>
+          <div>6 - 12 Nov, 2017</div>
+
+          <br />
+
           <div>Venue:</div>
+          <div>Gurudwara Gur Nanak Parkash Tracy</div>
+          <div>16101 W Grant Line Rd,</div>
+          <div>Tracy, CA 95304, USA</div>
 
           <br>
 
-          <div>Gurudwara Sri Guru Singh Sabha</div>
-          <div>Durby</div>
-          <br>
           <div>Time: 4:00 am to 6:00 am</div>
-          <br>
-          <div>FREE registration will be done at Gurudwara Sahib on 15th and 16th July, 2017</div>
-          <div>Register online or call 9999999999, 8888888888</div>
+          
+          <p>FREE registration will also be done at Gurudwara Sahib on 4th & 5th Nov, 2017</p>
 
-          <a href="/register.html" class="sgnm-button sgnm-event-button">Register</a>
+          <div>
+            <a href="/register.html?seq=1"  target="_blank">Register</a>
+             or Call 650-804-4859, 1604-783-5911
+          </div>
+
+          <a href="/register.html?seq=1"  target="_blank" class="sgnm-button sgnm-event-button">Register</a>
         </div>
         <div class="sgnm-cb"></div>
       </div>
 
-      {# Event #}
+      {# Event 3 #}
       <div class="sgnm-event">
         <div class="sgnm-event-section-left">
-          {#<span class="sgnm-top">17-23 July</span>#}
-          <img src="images/events/city/durby.jpg" alt="Location Durby" class="sgnm-event-img">
+          <img src="images/events/city/sangat.jpg" alt="Location Pittsburg, USA" class="sgnm-event-img">
         </div>
 
         <div class="sgnm-event-section-right">
-          <div class="sgnm-event-section-location">Durby</div>
-          <div>17-23 July, 2017</div>
+          <div class="sgnm-event-section-location">Pittsburg, USA</div>
+          <div>13 - 19 Nov, 2017</div>
+
+          <br />
+
           <div>Venue:</div>
+          <div>Sri Guru Ravidass Gurudwara Pittsburg</div>
+          <div>2150 Crestview Dr,</div>
+          <div>Pittsburg, CA 94565, USA</div>
 
           <br>
 
-          <div>Gurudwara Sri Guru Singh Sabha</div>
-          <div>Durby</div>
-          <br>
           <div>Time: 4:00 am to 6:00 am</div>
-          <br>
-          <div>FREE registration will be done at Gurudwara Sahib on 15th and 16th July, 2017</div>
-          <div>Register online or call 9999999999, 8888888888</div>
+          
+          <p>FREE registration will also be done at Gurudwara Sahib on 11th & 12th Nov, 2017</p>
 
-          <a href="/register.html" class="sgnm-button sgnm-event-button">Register</a>
+          <div>
+            <a href="/register.html?seq=2"  target="_blank">Register</a>
+             or Call 650-804-4859, 1604-783-5911
+          </div>
+
+          <a href="/register.html?seq=2"  target="_blank" class="sgnm-button sgnm-event-button">Register</a>
         </div>
         <div class="sgnm-cb"></div>
       </div>
 
-      {# Event #}
+      {# Event 4 #}
       <div class="sgnm-event">
         <div class="sgnm-event-section-left">
-          {#<span class="sgnm-top">17-23 July</span>#}
-          <img src="images/events/city/durby.jpg" alt="Location Durby" class="sgnm-event-img">
+          <img src="images/events/city/sangat.jpg" alt="Location Petaling Jaya Selangor, Malaysia" class="sgnm-event-img">
         </div>
 
         <div class="sgnm-event-section-right">
-          <div class="sgnm-event-section-location">Durby</div>
-          <div>17-23 July, 2017</div>
+          <div class="sgnm-event-section-location">Petaling Jaya Selangor, Malaysia</div>
+          <div>27 Nov - 3 Dec, 2017</div>
+
+          <br />
+
           <div>Venue:</div>
+          <div>Chayo Studio, Kelana Mall</div>
+          <div>No 50-2, Jalan SS 6/14, Kelana Jaya 47301</div>
+          <div>Petaling Jaya Selangor, Malaysia</div>
 
           <br>
 
-          <div>Gurudwara Sri Guru Singh Sabha</div>
-          <div>Durby</div>
-          <br>
           <div>Time: 4:00 am to 6:00 am</div>
-          <br>
-          <div>FREE registration will be done at Gurudwara Sahib on 15th and 16th July, 2017</div>
-          <div>Register online or call 9999999999, 8888888888</div>
+          
+          <p>No Registration Fee. Camp is absolutely free!</p>
+          {# <p>FREE registration will also be done at Gurudwara Sahib on 11th & 12th Nov, 2017</p> #}
 
-          <a href="/register.html" class="sgnm-button sgnm-event-button">Register</a>
+          <div>
+            <a href="/register.html?seq=3" target="_blank">Register</a>
+             or Call Dalip Singh: +60-19-751-2258
+          </div>
+
+          <a href="/register.html?seq=3" target="_blank" class="sgnm-button sgnm-event-button">Register</a>
         </div>
         <div class="sgnm-cb"></div>
       </div>
 
-      {# Event #}
+      {# Event 5 #}
       <div class="sgnm-event">
         <div class="sgnm-event-section-left">
-          {#<span class="sgnm-top">17-23 July</span>#}
-          <img src="images/events/city/durby.jpg" alt="Location Durby" class="sgnm-event-img">
+          <img src="images/events/city/sangat.jpg" alt="Location Perak, Malaysia" class="sgnm-event-img">
         </div>
 
         <div class="sgnm-event-section-right">
-          <div class="sgnm-event-section-location">Durby</div>
-          <div>17-23 July, 2017</div>
+          <div class="sgnm-event-section-location">Perak, Malaysia</div>
+          <div>4 - 10 Dec, 2017</div>
+
+          <br />
+
           <div>Venue:</div>
+          <div>Gurudwara Sahib Pusing</div>
+          <div>Lahat Road 31550,</div>
+          <div>Pusing, Perak, Malaysia</div>
 
           <br>
 
-          <div>Gurudwara Sri Guru Singh Sabha</div>
-          <div>Durby</div>
-          <br>
           <div>Time: 4:00 am to 6:00 am</div>
-          <br>
-          <div>FREE registration will be done at Gurudwara Sahib on 15th and 16th July, 2017</div>
-          <div>Register online or call 9999999999, 8888888888</div>
+          
+          <p>No Registration Fee. Camp is absolutely free!</p>
+          {# <p>FREE registration will also be done at Gurudwara Sahib on 11th & 12th Nov, 2017</p> #}
 
-          <a href="/register.html" class="sgnm-button sgnm-event-button">Register</a>
+          <div>
+            <a href="/register.html?seq=4" target="_blank">Register</a>
+             or Call Ragveer Singh: +60-12-519-7584
+          </div>
+
+          <a href="/register.html?seq=4" target="_blank" class="sgnm-button sgnm-event-button">Register</a>
         </div>
         <div class="sgnm-cb"></div>
       </div>
 
     </div>
+
   </section>
 </main>
   
