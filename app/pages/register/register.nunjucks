@@ -1,5 +1,9 @@
 {% extends "blank-layout.nunjucks" %}
 
+{% block blockStyle %}
+  <link rel="stylesheet" href="/styles/register.css">
+{% endblock %}
+
 {% block content %}
   <div class="register-container">
     <iframe src="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc-fTw6ULALsKdi6Y-SZH3abmKCG0OvVovUef43k53QP8PyKg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>

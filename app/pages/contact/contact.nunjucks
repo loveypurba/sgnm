@@ -1,8 +1,12 @@
 {% extends "layout.nunjucks" %}
 
+{% block blockStyle %}
+  <link rel="stylesheet" href="/styles/contact.css">
+{% endblock %}
+
 {# Header #}
 {% block header %}
-  {% set headerClass = "header-bg header-contact" %}
+  {% set headerClass = "sgnm-header-bg sgnm-header-contact" %}
   {% set isContactSelected = true %}
   {% include "partials/header.nunjucks" %}
 {% endblock %}

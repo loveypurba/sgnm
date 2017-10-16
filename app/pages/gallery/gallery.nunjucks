@@ -1,8 +1,12 @@
 {% extends "layout.nunjucks" %}
 
+{% block blockStyle %}
+  <link rel="stylesheet" href="/styles/gallery.css">
+{% endblock %}
+
 {# Header #}
 {% block header %}
-  {% set headerClass = "header-bg header-gallery" %}
+  {% set headerClass = "sgnm-header-bg sgnm-header-gallery" %}
   {% set isGallerySelected = true %}
   {% include "partials/header.nunjucks" %}
 {% endblock %}

@@ -1,8 +1,12 @@
 {% extends "layout.nunjucks" %}
 
+{% block blockStyle %}
+  <link rel="stylesheet" href="/styles/events.css">
+{% endblock %}
+
 {# Header #}
 {% block header %}
-  {% set headerClass = "header-bg header-events" %}
+  {% set headerClass = "sgnm-header-bg sgnm-header-events" %}
   {% set isEventsSelected = true %}
   {% include "partials/header.nunjucks" %}
 {% endblock %}

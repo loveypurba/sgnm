@@ -1,8 +1,12 @@
 {% extends "layout.nunjucks" %}
 
+{% block blockStyle %}
+  <link rel="stylesheet" href="/styles/sewa.css">
+{% endblock %}
+
 {# Header #}
 {% block header %}
-  {% set headerClass = "header-bg header-sewa" %}
+  {% set headerClass = "sgnm-header-bg sgnm-header-sewa" %}
   {% set isSewaSelected = true %}
   {% include "partials/header.nunjucks" %}
 {% endblock %}
