@@ -45,11 +45,11 @@
 
           <h3>Upcoming Event</h3>
 
-          <p class="tri-widgets-content tri-widgets-content__address">Birmingham, Guru Nanak Gurdwara (128-130 High St, Smethwick B66 3AP, UK)</p>
+          <p class="tri-widgets-content tri-widgets-content__address">Livermore, Gurudwara Tri Valley Sikh Center (2089 N Livermore Ave, Livermore, CA 94551 USA)</p>
 
-          <p class="tri-widgets-content">July 10 To July 19</p>
+          <p class="tri-widgets-content">Oct 30 To Nov 5, 2017</p>
 
-          <a href="/register.html" class="sgnm-button">Register</a>
+          <a href="/register.html?seq=0" target="_blank" class="sgnm-button">Register</a>
 
         </section>
 

@@ -19,10 +19,9 @@ $total-time-to-animate: $animation-delay * $num-of-items;
   max-height: 73.6rem;
 
   background-size: cover;
-  background-color:	#EEEDF5;
 
-  // background-image: url('../images/home/mob/hero-c.jpg');
-  background-image: url('../images/home/mob/hero-768.jpg');
+  background-image: url('../images/home/mob/hero-c.jpg');
+  // background-image: url('../images/home/mob/hero-768.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   
@@ -37,10 +36,13 @@ $total-time-to-animate: $animation-delay * $num-of-items;
   }
 
   @media all and ( min-width: 972px ) {
-    background-position: 10%;
+    // background-repeat: no-repeat;
+    // background-size: contain;
+    // background-position: 10%;
+    background-image: url('../images/home/mob/hero-768.png');
     background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 10%;
+    background-size: cover;
+    background-position: left;
   }
 
 }
@@ -68,7 +70,7 @@ $total-time-to-animate: $animation-delay * $num-of-items;
 
     font-size: 1.8rem;
 
-    background: rgba(229, 99, 63, 0.9);
+    // background: rgba(229, 99, 63, 0.9);
 
     line-height: 3rem;
     padding: 0 2rem;
@@ -95,11 +97,13 @@ $total-time-to-animate: $animation-delay * $num-of-items;
     &-desc {
       margin: 5px 0;
       margin: 0.5rem 0;
+      color: #1d1414;
     }
 
     &-author {
       margin: 5px 0;
       margin: 0.5rem 0;
+      color: #CE3203;
       // font-size: 20px;
       // font-size: 2rem;
     }
