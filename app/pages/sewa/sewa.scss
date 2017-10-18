@@ -10,6 +10,21 @@
     }
   }
 }
+.sgnm-widow-sewa-img-des {
+  display: none;
+}
+
+@media only screen and (min-width: $tablet-breakpoint) {
+  .sgnm-widow-sewa-img-des {
+    display: block;
+    position: absolute;
+    top: 10%;
+  }
+  .sgnm-widow-sewa-img-mob {
+    display: none;
+  }
+}
+
 .sgnm-sewa-widow-sewa-container {
   position: relative;
 }
@@ -22,11 +37,22 @@
 
   padding: 2rem;
   background: $color-white;
+  opacity: 0.8;
 
   @media only screen and (min-width: $tablet-breakpoint) {
     width: 50%;
     position: absolute;
     right: 0;
     top: 8rem;
+  }
+}
+
+.sgnm-sewa-info-container__widow {
+  @media only screen and (min-width: $tablet-breakpoint) {
+    width: 50%;
+    position: relative;
+    left: 50%;
+    z-index: 100;
+    top: 0;
   }
 }
