@@ -1,9 +1,13 @@
 <header class="{{ headerClass }}">
   <div {% if not noOverlay %} class="sgnm-overlay" {% endif %}>
     <div class="sgnm-header-container">
+      {% if isHomeSelected %}
       <a href="/">
-        <img src="/images/logo.png" alt="Sri Guru Nanak Mission" class="sgnm-primary-logo">
+        <img src="/images/logo-home.png" alt="Sri Guru Nanak Mission" class="sgnm-primary-logo">
       </a>
+      {% else %}
+        <img src="/images/logo.png" alt="Sri Guru Nanak Mission" class="sgnm-primary-logo">
+      {% endif %}
 
       <button type="button" id="btnPrimaryNavigation" class="sgnm-primary-header-navbar-toggle">
         <span class="sgnm-sr-only">Toggle navigation</span>
