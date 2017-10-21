@@ -1,8 +1,13 @@
 @import 'app/styles/core';
 
-.contact-us-address-container{
-  width: 50%;
-  margin: 5rem;
+.sgnm-contact {
+  @media only screen and (min-width: 768px) {
+    padding: 0 3rem;
+  }
+}
+
+.contact-us-address-container {
+  margin: 5rem 0;
   color: $color-dark-gray;
 
   h2 {
