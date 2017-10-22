@@ -97,6 +97,11 @@
     }
     /*-- End Section Tri-Widgets --*/
 
+    &-button {
+      @media only screen and (min-width: 972px) {
+        display: inline-block;
+      }
+    }
 
   /*-----------------------------------
   * Section About
@@ -116,6 +121,7 @@
 
     .about-left-container__heading {
       font-size: 3rem;
+      line-height: 1;
     }
 
     .about-left-container, .about-right-container {

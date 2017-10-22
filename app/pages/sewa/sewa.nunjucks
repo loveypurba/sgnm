@@ -21,7 +21,7 @@
 
     {# Sewa Widow #}
     <div class="sgnm-sewa-widow-sewa-container sgnm-sewa-widow">
-      <img src="images/sewa/widow-sewa.jpg" alt="widow sewa" class="sgnm-widow-sewa-img-mob">
+      <img src="images/sewa/widow-sewa-mob.jpg" alt="widow sewa" class="sgnm-widow-sewa-img-mob">
       <div class="sgnm-sewa-info-container sgnm-sewa-info-container__widow">
         <h2>Widow Sewa</h2>
         {# Old #}
