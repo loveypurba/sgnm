@@ -25,72 +25,6 @@
       {# Event 1 #}
       <div class="sgnm-event">
         <div class="sgnm-event-section-left">
-          <img src="images/events/city/sangat.jpg" alt="Location Livermore, USA" class="sgnm-event-img">
-        </div>
-
-        <div class="sgnm-event-section-right">
-          <div class="sgnm-event-section-location">Livermore, USA</div>
-          <div>30 Oct - 5 Nov, 2017</div>
-
-          <br />
-
-          <div>Venue:</div>
-          <div>Gurudwara Tri Valley Sikh Center, Livermore</div>
-          <div>2089 N Livermore Ave</div>
-          <div>Livermore, CA 94551 USA</div>
-
-          <br>
-
-          <div>Time: 4:00 am to 6:00 am</div>
-          
-          <p>FREE registration will also be done at Gurudwara Sahib on 28th & 29th Oct, 2017</p>
-
-          <div>
-            <a href="/register.html?seq=0" target="_blank">Register</a>
-             or Call 650-804-4859, 1604-783-5911
-          </div>
-
-          <a href="/register.html?seq=0" class="sgnm-button sgnm-event-button" target="_blank">Register</a>
-        </div>
-        <div class="sgnm-cb"></div>
-      </div>
-
-      {# Event 2 #}
-      <div class="sgnm-event">
-        <div class="sgnm-event-section-left">
-          <img src="images/events/city/sangat.jpg" alt="Location Tracy, USA" class="sgnm-event-img">
-        </div>
-
-        <div class="sgnm-event-section-right">
-          <div class="sgnm-event-section-location">Tracy, USA</div>
-          <div>6 - 12 Nov, 2017</div>
-
-          <br />
-
-          <div>Venue:</div>
-          <div>Gurudwara Gur Nanak Parkash Tracy</div>
-          <div>16101 W Grant Line Rd,</div>
-          <div>Tracy, CA 95304, USA</div>
-
-          <br>
-
-          <div>Time: 4:00 am to 6:00 am</div>
-          
-          <p>FREE registration will also be done at Gurudwara Sahib on 4th & 5th Nov, 2017</p>
-
-          <div>
-            <a href="/register.html?seq=1"  target="_blank">Register</a>
-             or Call 650-804-4859, 1604-783-5911
-          </div>
-
-          <a href="/register.html?seq=1"  target="_blank" class="sgnm-button sgnm-event-button">Register</a>
-        </div>
-        <div class="sgnm-cb"></div>
-      </div>
-
-      {# Event 3 #}
-      <div class="sgnm-event">
-        <div class="sgnm-event-section-left">
           <img src="images/events/city/sangat.jpg" alt="Location Pittsburg, USA" class="sgnm-event-img">
         </div>
 
@@ -121,7 +55,7 @@
         <div class="sgnm-cb"></div>
       </div>
 
-      {# Event 4 #}
+      {# Event 2 #}
       <div class="sgnm-event">
         <div class="sgnm-event-section-left">
           <img src="images/events/city/sangat.jpg" alt="Location Petaling Jaya Selangor, Malaysia" class="sgnm-event-img">
@@ -155,7 +89,7 @@
         <div class="sgnm-cb"></div>
       </div>
 
-      {# Event 5 #}
+      {# Event 3 #}
       <div class="sgnm-event">
         <div class="sgnm-event-section-left">
           <img src="images/events/city/sangat.jpg" alt="Location Perak, Malaysia" class="sgnm-event-img">

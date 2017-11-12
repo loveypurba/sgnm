@@ -45,11 +45,11 @@
 
           <h3>Upcoming Event</h3>
 
-          <p class="tri-widgets-content tri-widgets-content__address">Livermore, Gurudwara Tri Valley Sikh Center (2089 N Livermore Ave, Livermore, CA 94551 USA)</p>
+          <p class="tri-widgets-content tri-widgets-content__address">USA, Pittsburg, Sri Guru Ravidass Gurudwara Pittsburg </p>
 
-          <p class="tri-widgets-content">Oct 30 To Nov 5, 2017</p>
+          <p class="tri-widgets-content">Nov 13 To Nov 19, 2017</p>
 
-          <a href="/register.html?seq=0" target="_blank" class="sgnm-button">Register</a>
+          <a href="/register.html?seq=2" target="_blank" class="sgnm-button">Register</a>
           <a href="/events.html" class="sgnm-button">See all</a>
 
         </section>
