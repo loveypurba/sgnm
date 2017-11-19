@@ -22,106 +22,219 @@
 
     <div class="sgnm-events-container">
 
-      {# Event 1 #}
-      <div class="sgnm-event">
-        <div class="sgnm-event-section-left">
-          <img src="images/events/city/sangat.jpg" alt="Location Pittsburg, USA" class="sgnm-event-img">
-        </div>
-
-        <div class="sgnm-event-section-right">
-          <div class="sgnm-event-section-location">Pittsburg, USA</div>
-          <div>13 - 19 Nov, 2017</div>
-
-          <br />
-
-          <div>Venue:</div>
-          <div>Sri Guru Ravidass Gurudwara Pittsburg</div>
-          <div>2150 Crestview Dr,</div>
-          <div>Pittsburg, CA 94565, USA</div>
-
-          <br>
-
-          <div>Time: 4:00 am to 6:00 am</div>
-          
-          <p>FREE registration will also be done at Gurudwara Sahib on 11th & 12th Nov, 2017</p>
-
-          <div>
-            <a href="/register.html?seq=2"  target="_blank">Register</a>
-             or Call 650-804-4859, 1604-783-5911
+      {#
+        <div class="sgnm-event">
+          <div class="sgnm-event-section-left">
+            <img src="images/events/city/sangat.jpg" alt="Location Petaling Jaya Selangor, Malaysia" class="sgnm-event-img">
           </div>
 
-          <a href="/register.html?seq=2"  target="_blank" class="sgnm-button sgnm-event-button">Register</a>
+          <div class="sgnm-event-section-right">
+            <div class="sgnm-event-section-location">Petaling Jaya Selangor, Malaysia</div>
+            <div>27 Nov - 3 Dec, 2017</div>
+
+            <br />
+
+            <div>Venue:</div>
+            <div>Chayo Studio, Kelana Mall</div>
+            <div>No 50-2, Jalan SS 6/14, Kelana Jaya 47301</div>
+            <div>Petaling Jaya Selangor, Malaysia</div>
+
+            <br>
+
+            <div>Time: 4:00 am to 6:00 am</div>
+            
+            <p>No Registration Fee. Camp is absolutely free!</p>
+
+            <div>
+              <a href="/register.html?seq=3" target="_blank">Register</a>
+              or Call Dalip Singh: +60-19-751-2258
+            </div>
+
+            <a href="/register.html?seq=3" target="_blank" class="sgnm-button sgnm-event-button">Register</a>
+          </div>
+          <div class="sgnm-cb"></div>
         </div>
-        <div class="sgnm-cb"></div>
-      </div>
+      #}
 
-      {# Event 2 #}
-      <div class="sgnm-event">
-        <div class="sgnm-event-section-left">
-          <img src="images/events/city/sangat.jpg" alt="Location Petaling Jaya Selangor, Malaysia" class="sgnm-event-img">
-        </div>
+      {% 
+        for event in [
+                      {
+                        "country": "Malaysia",
+                        "city": "Petaling Jaya Selangor",
+                        "date": "27 Nov - 3 Dec, 2017",
+                        "add1": "Chayo Studio, Kelana Mall,",
+                        "add2": "No 50-2, Jalan SS 6/14, Kelana Jaya 47301,",
+                        "add3": "Petaling Jaya Selangor, Malaysia",
+                        "contact": "Ragveer Singh: +60-12-519-7584"
+                      },
+                      {
+                        "country": "Malaysia",
+                        "city": "Perak",
+                        "date": "4 - 10 Dec, 2017",
+                        "add1": "Gurudwara Sahib Pusing,",
+                        "add2": "Lahat Road 31550,",
+                        "add3": "Pusing, Perak, Malaysia",
+                        "contact": "Ragveer Singh: +60-12-519-7584"
+                      },
+                      
+                      {
+                        "country": "India",
+                        "city": "Jammu",
+                        "date": "11 - 17 Dec, 2017",
+                        "add1": "Gurudwara Sri Guru Singh Sabha,",
+                        "add2": "Rani Talab,",
+                        "add3": "Digiana, Jammu",
+                        "contact": "941-911-1200, 941-918-3840"
+                      },
+                      {
+                        "country": "India",
+                        "city": "Haryana",
+                        "date": "8 - 14 Jan, 2018",
+                        "add1": "Gurudwara Sri Guru Singh Sabha,",
+                        "add2": "Haryana",
+                        "add3": "",
+                        "contact": "946-342-3172, 988-851-2427"
+                      },
+                      {
+                        "country": "India",
+                        "city": "Indore",
+                        "date": "15 - 21 Jan, 2018",
+                        "add1": "Guru Amardas Ji Hall,",
+                        "add2": "Near Choithram Hospital, Manikbagh road, Indore,",
+                        "add3": "Indore, MP",
+                        "contact": "946-342-3172, 988-851-2427"
+                      },
+                      {
+                        "country": "India",
+                        "city": "Hyderabad",
+                        "date": "22 - 28 Jan, 2018",
+                        "add1": "Gurdwara Sahib,",
+                        "add2": "Hyderabad",
+                        "add3": "",
+                        "contact": "946-342-3172, 988-851-2427"
+                      },
+                      {
+                        "country": "India",
+                        "city": "Mumbai",
+                        "date": "29 Jan - 4 Feb, 2018",
 
-        <div class="sgnm-event-section-right">
-          <div class="sgnm-event-section-location">Petaling Jaya Selangor, Malaysia</div>
-          <div>27 Nov - 3 Dec, 2017</div>
+                        "add1": "Gurdwara Sri Guru Nanak Darbar,",
+                        "add2": "Sher-E-Punjab Co-operative Housing Society Ltd.,",
+                        "add3": "Mahakali Caves Road, Andheri (East), Mumbai",
 
-          <br />
+                        "contact": "946-342-3172, 988-851-2427"
+                      },
+                      {
+                        "country": "India",
+                        "city": "Delhi",
+                        "date": "5 - 11 Feb, 2018",
 
-          <div>Venue:</div>
-          <div>Chayo Studio, Kelana Mall</div>
-          <div>No 50-2, Jalan SS 6/14, Kelana Jaya 47301</div>
-          <div>Petaling Jaya Selangor, Malaysia</div>
+                        "add1": "Gurdwara Sahib,",
+                        "add2": "Delhi",
+                        "add3": "",
 
-          <br>
+                        "contact": "946-342-3172, 988-851-2427"
+                      },
+                      {
+                        "country": "India",
+                        "city": "Ludhiana",
+                        "date": "12 - 18 Feb, 2018",
 
-          <div>Time: 4:00 am to 6:00 am</div>
-          
-          <p>No Registration Fee. Camp is absolutely free!</p>
-          {# <p>FREE registration will also be done at Gurudwara Sahib on 11th & 12th Nov, 2017</p> #}
+                        "add1": "Gurdwara Sahib,",
+                        "add2": "Ludhiana",
+                        "add3": "",
+                        
+                        "contact": "946-342-3172, 988-851-2427"
+                      },
+                      {
+                        "country": "India",
+                        "city": "Bathinda",
+                        "date": "19 - 25 Feb, 2018",
 
-          <div>
-            <a href="/register.html?seq=3" target="_blank">Register</a>
-             or Call Dalip Singh: +60-19-751-2258
+                        "add1": "Gurdwara Sahib,",
+                        "add2": "Vill. Ganga Tehsil Nathana,",
+                        "add3": "District Bathinda",
+                        
+                        "contact": "946-342-3172, 988-851-2427"
+                      },
+                      {
+                        "country": "India",
+                        "city": "Ajnala",
+                        "date": "26 Feb - 4 Mar, 2018",
+
+                        "add1": "Kirtan Darbar Ground,",
+                        "add2": "Ajnala",
+                        "add3": "",
+                        
+                        "contact": "946-342-3172, 988-851-2427"
+                      },
+                      {
+                        "country": "India",
+                        "city": "Amritsar",
+                        "date": "5 - 11 Mar, 2018",
+
+                        "add1": "Khalsa College,",
+                        "add2": "Amritsar",
+                        "add3": "",
+                        
+                        "contact": "946-342-3172, 988-851-2427"
+                      },
+                      {
+                        "country": "India",
+                        "city": "Patiala",
+                        "date": "12 - 18 Mar, 2018",
+
+                        "add1": "Gurdwara Singh Sabha,",
+                        "add2": "Mall road, Near Phubara Chowk,",
+                        "add3": "Patiala",
+                        
+                        "contact": "946-342-3172, 988-851-2427"
+                      },
+                      {
+                        "country": "India",
+                        "city": "Advance camp, Dunera",
+                        "date": "22 - 25 Mar, 2018",
+
+                        "add1": "Gurdwara Sri Anandsar Sahib,",
+                        "add2": "Dunera, Dalhousie road,",
+                        "add3": "Dist. Pathankot, Punjab",
+                        
+                        "contact": "988-811-8120, 981-527-7334, 946-342-3172"
+                      }
+                    ] 
+      %}
+        <div class="sgnm-event">
+          <div class="sgnm-event-section-left">
+            <img src="images/events/city/sangat.jpg" alt="Location Perak, Malaysia" class="sgnm-event-img">
           </div>
 
-          <a href="/register.html?seq=3" target="_blank" class="sgnm-button sgnm-event-button">Register</a>
-        </div>
-        <div class="sgnm-cb"></div>
-      </div>
+          <div class="sgnm-event-section-right">
+            <div class="sgnm-event-section-location">{{ event.city }}, {{ event.country }}</div>
+            <div>{{ event.date }}</div>
 
-      {# Event 3 #}
-      <div class="sgnm-event">
-        <div class="sgnm-event-section-left">
-          <img src="images/events/city/sangat.jpg" alt="Location Perak, Malaysia" class="sgnm-event-img">
-        </div>
+            <br />
 
-        <div class="sgnm-event-section-right">
-          <div class="sgnm-event-section-location">Perak, Malaysia</div>
-          <div>4 - 10 Dec, 2017</div>
+            <div>Venue:</div>
+            <div>{{ event.add1 }}</div>
+            <div>{{ event.add2 }}</div>
+            <div>{{ event.add3 }}</div>
 
-          <br />
+            <br>
 
-          <div>Venue:</div>
-          <div>Gurudwara Sahib Pusing</div>
-          <div>Lahat Road 31550,</div>
-          <div>Pusing, Perak, Malaysia</div>
+            <div>Time: 4:00 am to 6:00 am </div>
+            
+            <p>No Registration Fee. Camp is absolutely free!</p>
 
-          <br>
+            <div>
+              <a href="/register.html?seq={{ loop.index0 }}" target="_blank">Register</a>
+              or Call {{ event.contact }}
+            </div>
 
-          <div>Time: 4:00 am to 6:00 am</div>
-          
-          <p>No Registration Fee. Camp is absolutely free!</p>
-          {# <p>FREE registration will also be done at Gurudwara Sahib on 11th & 12th Nov, 2017</p> #}
-
-          <div>
-            <a href="/register.html?seq=4" target="_blank">Register</a>
-             or Call Ragveer Singh: +60-12-519-7584
+            <a href="/register.html?seq={{ loop.index0 }}" target="_blank" class="sgnm-button sgnm-event-button">Register</a>
           </div>
-
-          <a href="/register.html?seq=4" target="_blank" class="sgnm-button sgnm-event-button">Register</a>
+          <div class="sgnm-cb"></div>
         </div>
-        <div class="sgnm-cb"></div>
-      </div>
+      {% endfor %}
 
     </div>
 

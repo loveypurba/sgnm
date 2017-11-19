@@ -11,26 +11,59 @@
 
   <script>
 
-    var registerationLinksArr = [ "https://docs.google.com/forms/d/e/1FAIpQLSeu7MLyME--10nzwZPGkSCfGlSZsC8Gf8UkcHEmRJUZ4gRfSA/viewform?usp=pp_url&entry.1087743563=Livermore,+USA,+30+Oct+-+5+Nov,+2017.+Gurudwara+Tri+Valley+Sikh+Center+(2089+N+Livermore+Ave+Livermore,+CA+94551+USA)&entry.2005620554&entry.1045781291&entry.1065046570&entry.1166974658&entry.839337160",
+    var registerationLinksArr = [ 
+      "https://docs.google.com/forms/d/e/1FAIpQLSc-fTw6ULALsKdi6Y-SZH3abmKCG0OvVovUef43k53QP8PyKg/viewform?usp=pp_url&entry.1087743563=Petaling+Jaya+Selangor,+Malaysia,+27+Nov+-+3+Dec,+2017.+Address:+Chayo+Studio,+Kelana+Mall+(No+50-2,+Jalan+SS+6/14,+Kelana+Jaya+47301,+Petaling+Jaya+Selangor,+Malaysia)&entry.2005620554&entry.1045781291&entry.1065046570&entry.1166974658&entry.839337160",
     
-    "https://docs.google.com/forms/d/e/1FAIpQLSeu7MLyME--10nzwZPGkSCfGlSZsC8Gf8UkcHEmRJUZ4gRfSA/viewform?usp=pp_url&entry.1087743563=Tracy,+USA,+6+-+12+Nov,+2017.+Gurudwara+Gur+Nanak+Parkash+Tracy+(16101+W+Grant+Line+Rd,+Tracy,+CA+95304,+USA)&entry.2005620554&entry.1045781291&entry.1065046570&entry.1166974658&entry.839337160",
+      "https://docs.google.com/forms/d/e/1FAIpQLSc-fTw6ULALsKdi6Y-SZH3abmKCG0OvVovUef43k53QP8PyKg/viewform?usp=pp_url&entry.1087743563=Perak,+Malaysia,+4+-+10+Dec,+2017.+Address:+Gurudwara+Sahib+Pusing+(Lahat+Road+31550,Pusing,+Perak,+Malaysia)&entry.2005620554&entry.1045781291&entry.1065046570&entry.1166974658&entry.839337160",
 
-    "https://docs.google.com/forms/d/e/1FAIpQLSeu7MLyME--10nzwZPGkSCfGlSZsC8Gf8UkcHEmRJUZ4gRfSA/viewform?usp=pp_url&entry.1087743563=Pittsburg,+USA,+13+-+19+Nov,+2017.+Address:+Sri+Guru+Ravidass+Gurudwara+Pittsburg+(2150+Crestview+Dr,+Pittsburg,+CA+94565,+USA)&entry.2005620554&entry.1045781291&entry.1065046570&entry.1166974658&entry.839337160",
-    
-    "https://docs.google.com/forms/d/e/1FAIpQLSc-fTw6ULALsKdi6Y-SZH3abmKCG0OvVovUef43k53QP8PyKg/viewform?usp=pp_url&entry.1087743563=Petaling+Jaya+Selangor,+Malaysia,+27+Nov+-+3+Dec,+2017.+Address:+Chayo+Studio,+Kelana+Mall+(No+50-2,+Jalan+SS+6/14,+Kelana+Jaya+47301,+Petaling+Jaya+Selangor,+Malaysia)&entry.2005620554&entry.1045781291&entry.1065046570&entry.1166974658&entry.839337160",
-    
-    "https://docs.google.com/forms/d/e/1FAIpQLSc-fTw6ULALsKdi6Y-SZH3abmKCG0OvVovUef43k53QP8PyKg/viewform?usp=pp_url&entry.1087743563=Perak,+Malaysia,+4+-+10+Dec,+2017.+Address:+Gurudwara+Sahib+Pusing+(Lahat+Road+31550,Pusing,+Perak,+Malaysia)&entry.2005620554&entry.1045781291&entry.1065046570&entry.1166974658&entry.839337160" ]
+      "https://docs.google.com/forms/d/e/1FAIpQLSfpz5raWPssp6ZBezyTuYWpfIDJW3xpmeemY2Yn3afutpX0yg/viewform?usp=pp_url&entry.1087743563=Gurdwara+Sri+Guru+Singh+Sabha,+Rani+Talab,+Digiana,+Jammu+11-17+Dec,+2017&entry.2005620554&entry.1045781291&entry.1551840075&entry.1065046570&entry.1166974658&entry.839337160",
 
-    function getParameterByName(name, url) {
-      if (!url) url = window.location.href;
+      "https://docs.google.com/forms/d/e/1FAIpQLSfpz5raWPssp6ZBezyTuYWpfIDJW3xpmeemY2Yn3afutpX0yg/viewform?usp=pp_url&entry.1087743563=Gurdwara+Sri+Guru+Singh+Sabha,+Haryana+8-14+Jan,+2018&entry.2005620554&entry.1045781291&entry.1551840075&entry.1065046570&entry.1166974658&entry.839337160",
+
+      "https://docs.google.com/forms/d/e/1FAIpQLSfpz5raWPssp6ZBezyTuYWpfIDJW3xpmeemY2Yn3afutpX0yg/viewform?usp=pp_url&entry.1087743563=Guru+Amardas+Ji+Hall,+near+Choithram+Hospital,+Manikbagh+road,+Indore,+MP,+India+15-21+Jan,+2018&entry.2005620554&entry.1045781291&entry.1551840075&entry.1065046570&entry.1166974658&entry.839337160",
+
+      "https://docs.google.com/forms/d/e/1FAIpQLSfpz5raWPssp6ZBezyTuYWpfIDJW3xpmeemY2Yn3afutpX0yg/viewform?usp=pp_url&entry.1087743563=Gurdwara+Sahib,+Hyderabad+22-28+Jan,+2018&entry.2005620554&entry.1045781291&entry.1551840075&entry.1065046570&entry.1166974658&entry.839337160",
+
+      "https://docs.google.com/forms/d/e/1FAIpQLSfpz5raWPssp6ZBezyTuYWpfIDJW3xpmeemY2Yn3afutpX0yg/viewform?usp=pp_url&entry.1087743563=Gurdwara+Sri+Guru+Nanak+Darbar,+Sher-E-Punjab+Co-operative+Housing+Society+Ltd.,+Mahakali+Caves+Road,+Andheri+(East),+Mumbai,+29Jan+-+4Feb,+2018&entry.2005620554&entry.1045781291&entry.1551840075&entry.1065046570&entry.1166974658&entry.839337160",
+
+      "https://docs.google.com/forms/d/e/1FAIpQLSfpz5raWPssp6ZBezyTuYWpfIDJW3xpmeemY2Yn3afutpX0yg/viewform?usp=pp_url&entry.1087743563=Gurdwara+Sahib,+Delhi+5-11+Feb,+2018&entry.2005620554&entry.1045781291&entry.1551840075&entry.1065046570&entry.1166974658&entry.839337160",
+
+      "https://docs.google.com/forms/d/e/1FAIpQLSfpz5raWPssp6ZBezyTuYWpfIDJW3xpmeemY2Yn3afutpX0yg/viewform?usp=pp_url&entry.1087743563=Gurdwara+Sahib,+Ludhiana+12-18+Feb,+2018&entry.2005620554&entry.1045781291&entry.1551840075&entry.1065046570&entry.1166974658&entry.839337160",
+
+      "https://docs.google.com/forms/d/e/1FAIpQLSfpz5raWPssp6ZBezyTuYWpfIDJW3xpmeemY2Yn3afutpX0yg/viewform?usp=pp_url&entry.1087743563=Gurdwara+Sahib,+Bathinda+19-25+Feb,+2018&entry.2005620554&entry.1045781291&entry.1551840075&entry.1065046570&entry.1166974658&entry.839337160",
+
+      "https://docs.google.com/forms/d/e/1FAIpQLSfpz5raWPssp6ZBezyTuYWpfIDJW3xpmeemY2Yn3afutpX0yg/viewform?usp=pp_url&entry.1087743563=Gurdwara+Sahib,+Ajnala+26Feb+-+4Mar,+2018&entry.2005620554&entry.1045781291&entry.1551840075&entry.1065046570&entry.1166974658&entry.839337160",
+
+      "https://docs.google.com/forms/d/e/1FAIpQLSfpz5raWPssp6ZBezyTuYWpfIDJW3xpmeemY2Yn3afutpX0yg/viewform?usp=pp_url&entry.1087743563=Gurdwara+Sahib,+Amritsar+5-11+Mar,+2018&entry.2005620554&entry.1045781291&entry.1551840075&entry.1065046570&entry.1166974658&entry.839337160",
+
+      "https://docs.google.com/forms/d/e/1FAIpQLSfpz5raWPssp6ZBezyTuYWpfIDJW3xpmeemY2Yn3afutpX0yg/viewform?usp=pp_url&entry.1087743563=Gurdwara+Sahib,+Patiala+12-18+Mar,+2018&entry.2005620554&entry.1045781291&entry.1551840075&entry.1065046570&entry.1166974658&entry.839337160",
+
+      "https://docs.google.com/forms/d/e/1FAIpQLSe2cX5jg5g5nzjwORol19Oh8FAw1C56Z8_9PRrYNsieMVthyA/viewform"
+    
+    ]
+
+    function getParameterByName (name, url) {
+      if (!url) {
+        url = window.location.href;
+      }
+
       name = name.replace(/[\[\]]/g, "\\$&");
+
       var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
           results = regex.exec(url);
-      if (!results) return null;
-      if (!results[2]) return '';
-      return decodeURIComponent(results[2].replace(/\+/g, " "));
+
+      if (!results) {
+        return null;
+      }
+      if (!results[2]) {
+        return '';
+      }
+
+      return decodeURIComponent( results[2].replace( /\+/g, " " ) );
     }
 
     document.getElementsByTagName('iframe')[0].src = registerationLinksArr[ getParameterByName('seq') ];
+
   </script>
+
 {% endblock %}

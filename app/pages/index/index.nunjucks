@@ -1,7 +1,277 @@
 {% extends "layout.nunjucks" %}
 
 {% block blockStyle %}
-  <link rel="stylesheet" href="/styles/index.css">
+  <link rel="stylesheet" href="/styles/index.css" media="none" onload="if(media!='all')media='all'">
+  <noscript><link rel="stylesheet" href="/styles/index.css"></noscript>
+
+  <style>
+
+    @media only screen and (min-width: 768px) {
+      .sgnm-main {
+          font-size: 1.6rem;
+      }
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body,
+    html {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    html {
+      font-size: 62.5%;
+    }
+    body {
+      font-family: 'Signika', sans-serif;
+    }
+    a {
+      text-decoration: none;
+    }
+    li {
+      list-style: none;
+    }
+    html,
+    body,
+    .sgnm {
+      height: 100%;
+    }
+
+    .sgnm {
+      height: 100%;
+      position: relative;
+    }
+    .sgnm-main {
+      font-size: 1.8rem;
+      line-height: 2.4rem;
+      min-width: 320px;
+    }
+    
+    .sgnm {
+      overflow: hidden;
+    }
+
+    #page {
+      overflow: auto;
+    }
+    .sgnm-primary-header {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      min-width: 320px;
+      max-width: 1200px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      z-index: 10;
+    }
+    .sgnm-header-container {
+      position: relative;
+      z-index: 1;
+    }
+    .sgnm-primary-logo {
+      width: 12rem;
+      position: absolute;
+      left: 3px;
+      left: 0.3rem;
+      top: 8px;
+      top: 0.8rem;
+    }
+    @media only screen and (min-width: 768px) {
+      .sgnm-primary-logo {
+          width: 17rem;
+      }
+    }
+    .sgnm-primary-header-navbar-toggle {
+      border: 2px solid #fff;
+      padding: 8px;
+      border-radius: 4px;
+      background-color: transparent;
+      float: right;
+      margin-top: 45px;
+      margin-right: 20px;
+      z-index: 11;
+    }
+    @media only screen and (min-width: 982px) {
+      .sgnm-primary-header-navbar-toggle {
+          display: none;
+      }
+    }
+    .sgnm-primary-navigation {
+      min-height: 50px;
+      display: none;
+      width: 100%;
+    }
+    @media only screen and (min-width: 982px) {
+      .sgnm-primary-navigation {
+          display: block;
+      }
+    }
+    .sgnm-primary-navigation-list-container {
+      padding: 0;
+      margin: 0;
+      background: rgba(0, 0, 0, 0.9);
+      height: 100vh;
+      transition: opacity 500ms;
+    }
+    @media only screen and (min-width: 982px) {
+      .sgnm-primary-navigation-list-container {
+          background: none;
+          float: right;
+          margin-top: 50px;
+          margin-right: 20px;
+          height: auto;
+      }
+    }
+    .sgnm-primary-navigation-list-container li {
+      text-align: center;
+      border: 1px solid #fff;
+      margin: 0;
+    }
+    @media only screen and (min-width: 982px) {
+      .sgnm-primary-navigation-list-container li {
+          margin-left: 1.7rem;
+          display: inline-block;
+          border: none;
+      }
+    }
+    .sgnm-primary-navigation-list-container li a {
+      font-size: 1.8rem;
+      color: #fff;
+      width: 100%;
+      height: 100%;
+      display: inline-block;
+      padding: 1.6rem .8rem;
+    }
+    @media only screen and (min-width: 982px) {
+      .sgnm-primary-navigation-list-container li a:hover,
+      .sgnm-primary-navigation-list-container li a.selected {
+          border-bottom: 5px solid #CE3203;
+      }
+    }
+    @media only screen and (min-width: 768px) {
+      .sgnm-primary-header li a {
+          color: #524b4b;
+      }
+    }
+    @media all and (min-width: 809px) {
+      .sgnm-hero-section {
+          background: url("../images/home/mob/hero-bg-filler.jpg");
+      }
+    }
+    .container-sgnm-bachans {
+      position: relative;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 1200px;
+      height: 100vh;
+      min-height: 600px;
+      min-height: 60rem;
+      max-height: 736px;
+      max-height: 73.6rem;
+      background-size: cover;
+      background-image: url("../images/home/mob/hero-c.jpg");
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
+    @media only screen and (min-width: 550px) {
+      .container-sgnm-bachans {
+          min-height: 650px;
+          min-height: 65rem;
+      }
+    }
+    @media only screen and (min-width: 809px) {
+      .container-sgnm-bachans {
+          background-size: 810px auto;
+      }
+    }
+    @media all and (min-width: 972px) {
+      .container-sgnm-bachans {
+          background-image: url("../images/home/mob/hero-768.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: left;
+      }
+    }
+    .sgnm-bachans {
+      margin: 0;
+      padding: 0;
+      position: relative;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      min-height: 520px;
+    }
+    .sgnm-bachans-bachan {
+      opacity: 0;
+      position: absolute;
+      width: 90%;
+      bottom: 10px;
+      left: 5%;
+      color: #fff;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 1.8rem;
+      line-height: 3rem;
+      padding: 0 2rem;
+      -webkit-animation: sgnmTitleAnimation 70s linear infinite 0s;
+      animation: sgnmTitleAnimation 70s linear infinite 0s;
+    }
+    @media only screen and (min-width: 768px) {
+      .sgnm-bachans-bachan {
+          font-size: 2.5rem;
+          line-height: 3.5rem;
+          padding: 0.5rem;
+      }
+    }
+    @media only screen and (min-width: 972px) {
+      .sgnm-bachans-bachan {
+          width: 40%;
+          top: 50%;
+          right: 20px;
+          left: auto;
+          bottom: auto;
+          padding: 2rem;
+          border-radius: 10px;
+      }
+    }
+    .sgnm-bachans-bachan-desc {
+      margin: 5px 0;
+      margin: 0.5rem 0;
+      color: #1d1414;
+    }
+    .sgnm-bachans-bachan-author {
+      margin: 5px 0;
+      margin: 0.5rem 0;
+      color: #CE3203;
+    }
+    .sgnm-bachans-bachan:nth-child(2) {
+      -webkit-animation-delay: 10s;
+      animation-delay: 10s;
+    }
+    .sgnm-bachans-bachan:nth-child(3) {
+      -webkit-animation-delay: 20s;
+      animation-delay: 20s;
+    }
+    .sgnm-bachans-bachan:nth-child(4) {
+      -webkit-animation-delay: 30s;
+      animation-delay: 30s;
+    }
+    .sgnm-bachans-bachan:nth-child(5) {
+      -webkit-animation-delay: 40s;
+      animation-delay: 40s;
+    }
+    .sgnm-bachans-bachan:nth-child(6) {
+      -webkit-animation-delay: 50s;
+      animation-delay: 50s;
+    }
+    .sgnm-bachans-bachan:nth-child(7) {
+      -webkit-animation-delay: 60s;
+      animation-delay: 60s;
+    }
+
+  </style>
 {% endblock %}
 
 {% block header %}
@@ -45,11 +315,11 @@
 
           <h3>Upcoming Event</h3>
 
-          <p class="tri-widgets-content tri-widgets-content__address">USA, Pittsburg, Sri Guru Ravidass Gurudwara Pittsburg </p>
+          <p class="tri-widgets-content tri-widgets-content__address">Malaysia, Petaling Jaya Selangor</p>
 
-          <p class="tri-widgets-content">Nov 13 To Nov 19, 2017</p>
+          <p class="tri-widgets-content">Nov 27 To Dec 3, 2017</p>
 
-          <a href="/register.html?seq=2" target="_blank" class="sgnm-button">Register</a>
+          <a href="/register.html?seq=0" target="_blank" class="sgnm-button">Register</a>
           <a href="/events.html" class="sgnm-button">See all</a>
 
         </section>
@@ -150,142 +420,155 @@
 {% endblock %}
 
 {% block blockScripts %}
-  {# <script src="/scripts/lib/galleria-1.5.7.min.js"></script> #}
-  <script src="http://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/galleria.min.js"></script>
-  <script>
-     $(document).ready(function() { 
-        // Galleria.loadTheme('scripts/lib/galleria.classic.min.js');
-        Galleria.loadTheme('http://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/themes/classic/galleria.classic.min.js');
-        
-        /*Galleria.configure({
-            thumbnails: "lazy"
-        });*/
+  <script async defer>
+    var lazyLoad = function (src, fn) {
+      var js, fjs = document.getElementsByTagName( 'script' )[ document.getElementsByTagName( 'script' ).length-1 ];
 
-        var data = [
-          {
-            thumb: 'images/home/gallery/1_tn.jpg',
-            image: 'images/home/gallery/1.jpg'
-          },
-          {
-            thumb: 'images/home/gallery/2_tn.jpg',
-            image: 'images/home/gallery/2.jpg'
-          },
-          {
-            thumb: 'images/home/gallery/3_tn.jpg',
-            image: 'images/home/gallery/3.jpg'
-          },
-          {
-            thumb: 'images/home/gallery/4_tn.jpg',
-            image: 'images/home/gallery/4.jpg'
-          },
-          {
-            thumb: 'images/home/gallery/5_tn.jpg',
-            image: 'images/home/gallery/5.jpg'
-          },
-          {
-            thumb: 'images/home/gallery/6_tn.jpg',
-            image: 'images/home/gallery/6.jpg'
-          },
-          {
-            thumb: 'images/home/gallery/7_tn.jpg',
-            image: 'images/home/gallery/7.jpg'
-          },
-          {
-            thumb: 'images/home/gallery/8_tn.jpg',
-            image: 'images/home/gallery/8.jpg'
-          },
-          {
-            thumb: 'images/home/gallery/9_tn.jpg',
-            image: 'images/home/gallery/9.jpg'
-          },
-          {
-            thumb: 'images/home/gallery/10_tn.jpg',
-            image: 'images/home/gallery/10.jpg'
-          },
-          {
-            thumb: 'images/home/gallery/11_tn.jpg',
-            image: 'images/home/gallery/11.jpg'
-          },
-          {
-            thumb: 'images/home/gallery/12_tn.jpg',
-            image: 'images/home/gallery/12.jpg'
-          },
-          {
-            thumb: 'images/home/gallery/13_tn.jpg',
-            image: 'images/home/gallery/13.jpg'
-          },
-          {
-            thumb: 'images/home/gallery/14_tn.jpg',
-            image: 'images/home/gallery/14.jpg'
-          },
-          {
-            thumb: 'images/home/gallery/15_tn.jpg',
-            image: 'images/home/gallery/15.jpg'
-          },
-          {
-            thumb: 'images/home/gallery/16_tn.jpg',
-            image: 'images/home/gallery/16.jpg'
-          },
-          {
-            thumb: 'images/home/gallery/17_tn.jpg',
-            image: 'images/home/gallery/17.jpg'
-          },
-          {
-            thumb: 'images/home/gallery/18_tn.jpg',
-            image: 'images/home/gallery/18.jpg'
-          },
-          {
-            thumb: 'images/home/gallery/19_tn.jpg',
-            image: 'images/home/gallery/19.jpg'
-          },
-          {
-            thumb: 'images/home/gallery/20_tn.jpg',
-            image: 'images/home/gallery/20.jpg'
-          },
-          {
-            thumb: 'images/home/gallery/21_tn.jpg',
-            image: 'images/home/gallery/21.jpg'
-          },
-          {
-            thumb: 'images/home/gallery/22_tn.jpg',
-            image: 'images/home/gallery/22.jpg'
-          },
-          {
-            thumb: 'images/home/gallery/23_tn.jpg',
-            image: 'images/home/gallery/23.jpg'
-          },
-          {
-            thumb: 'images/home/gallery/24_tn.jpg',
-            image: 'images/home/gallery/24.jpg'
-          },
-          {
-            thumb: 'images/home/gallery/25_tn.jpg',
-            image: 'images/home/gallery/25.jpg'
-          },
-          {
-            thumb: 'images/home/gallery/26_tn.jpg',
-            image: 'images/home/gallery/26.jpg'
-          },
-          {
-            thumb: 'images/home/gallery/27_tn.jpg',
-            image: 'images/home/gallery/27.jpg'
-          },
-          {
-            thumb: 'images/home/gallery/28_tn.jpg',
-            image: 'images/home/gallery/28.jpg'
-          },
-          {
-            thumb: 'images/home/gallery/29_tn.jpg',
-            image: 'images/home/gallery/29.jpg'
-          }
-        ];
+      js = document.createElement( 'script' );
 
-        Galleria.run('#imageSlider', {
-            dataSource: data,
-            autoplay: 4000
-        });
-        
-        $('#imageSlider').css('visibility', 'visible');
-     });
+      js.onload = function(){
+        if (fn) {
+            fn();
+        }
+      };
+      js.src = src;
+      fjs.parentNode.insertBefore(js, fjs);
+    };
+
+    var data = [
+        {
+          thumb: 'images/home/gallery/1_tn.jpg',
+          image: 'images/home/gallery/1.jpg'
+        },
+        {
+          thumb: 'images/home/gallery/2_tn.jpg',
+          image: 'images/home/gallery/2.jpg'
+        },
+        {
+          thumb: 'images/home/gallery/3_tn.jpg',
+          image: 'images/home/gallery/3.jpg'
+        },
+        {
+          thumb: 'images/home/gallery/4_tn.jpg',
+          image: 'images/home/gallery/4.jpg'
+        },
+        {
+          thumb: 'images/home/gallery/5_tn.jpg',
+          image: 'images/home/gallery/5.jpg'
+        },
+        {
+          thumb: 'images/home/gallery/6_tn.jpg',
+          image: 'images/home/gallery/6.jpg'
+        },
+        {
+          thumb: 'images/home/gallery/7_tn.jpg',
+          image: 'images/home/gallery/7.jpg'
+        },
+        {
+          thumb: 'images/home/gallery/8_tn.jpg',
+          image: 'images/home/gallery/8.jpg'
+        },
+        {
+          thumb: 'images/home/gallery/9_tn.jpg',
+          image: 'images/home/gallery/9.jpg'
+        },
+        {
+          thumb: 'images/home/gallery/10_tn.jpg',
+          image: 'images/home/gallery/10.jpg'
+        },
+        {
+          thumb: 'images/home/gallery/11_tn.jpg',
+          image: 'images/home/gallery/11.jpg'
+        },
+        {
+          thumb: 'images/home/gallery/12_tn.jpg',
+          image: 'images/home/gallery/12.jpg'
+        },
+        {
+          thumb: 'images/home/gallery/13_tn.jpg',
+          image: 'images/home/gallery/13.jpg'
+        },
+        {
+          thumb: 'images/home/gallery/14_tn.jpg',
+          image: 'images/home/gallery/14.jpg'
+        },
+        {
+          thumb: 'images/home/gallery/15_tn.jpg',
+          image: 'images/home/gallery/15.jpg'
+        },
+        {
+          thumb: 'images/home/gallery/16_tn.jpg',
+          image: 'images/home/gallery/16.jpg'
+        },
+        {
+          thumb: 'images/home/gallery/17_tn.jpg',
+          image: 'images/home/gallery/17.jpg'
+        },
+        {
+          thumb: 'images/home/gallery/18_tn.jpg',
+          image: 'images/home/gallery/18.jpg'
+        },
+        {
+          thumb: 'images/home/gallery/19_tn.jpg',
+          image: 'images/home/gallery/19.jpg'
+        },
+        {
+          thumb: 'images/home/gallery/20_tn.jpg',
+          image: 'images/home/gallery/20.jpg'
+        },
+        {
+          thumb: 'images/home/gallery/21_tn.jpg',
+          image: 'images/home/gallery/21.jpg'
+        },
+        {
+          thumb: 'images/home/gallery/22_tn.jpg',
+          image: 'images/home/gallery/22.jpg'
+        },
+        {
+          thumb: 'images/home/gallery/23_tn.jpg',
+          image: 'images/home/gallery/23.jpg'
+        },
+        {
+          thumb: 'images/home/gallery/24_tn.jpg',
+          image: 'images/home/gallery/24.jpg'
+        },
+        {
+          thumb: 'images/home/gallery/25_tn.jpg',
+          image: 'images/home/gallery/25.jpg'
+        },
+        {
+          thumb: 'images/home/gallery/26_tn.jpg',
+          image: 'images/home/gallery/26.jpg'
+        },
+        {
+          thumb: 'images/home/gallery/27_tn.jpg',
+          image: 'images/home/gallery/27.jpg'
+        },
+        {
+          thumb: 'images/home/gallery/28_tn.jpg',
+          image: 'images/home/gallery/28.jpg'
+        },
+        {
+          thumb: 'images/home/gallery/29_tn.jpg',
+          image: 'images/home/gallery/29.jpg'
+        }
+    ];
+
+    var main = function () {
+      Galleria.loadTheme('http://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/themes/classic/galleria.classic.min.js');
+
+      Galleria.run('#imageSlider', {
+        dataSource: data,
+        autoplay: 4000
+      });
+      
+      $('#imageSlider').css('visibility', 'visible');
+    }
+
+    $(document).ready(function() { 
+
+      lazyLoad( "http://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/galleria.min.js", main );
+      
+    });
   </script>
 {% endblock %}

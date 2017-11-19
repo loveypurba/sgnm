@@ -54,7 +54,8 @@
     {# <meta name="theme-color" content="#2F3BA2"> #}
     <meta name="theme-color" content="#ffffff">
 
-    <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Signika" media="none" onload="if(media!='all')media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Signika"></noscript>
 
     {# <link rel="stylesheet" href="styles/main.css">  #}
     
@@ -71,7 +72,9 @@
 
     {% block header %} {% endblock %}
 
-    {% block content %} {% endblock %} {% include "partials/footer.nunjucks" %}
+    {% block content %} {% endblock %}
+    
+    {% include "partials/footer.nunjucks" %}
 
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
     crossorigin="anonymous"></script>
