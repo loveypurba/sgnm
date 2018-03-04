@@ -1,7 +1,9 @@
 {% extends "layout.nunjucks" %}
 
 {% block blockStyle %}
-  <link rel="stylesheet" href="/styles/about.css">
+  {# <link rel="stylesheet" href="/styles/about.css"> #}
+  <link rel="stylesheet" href="/styles/about.css" media="none" onload="if(media!='all')media='all'">
+  <noscript><link rel="stylesheet" href="/styles/about.css"></noscript>
 {% endblock %}
 
 {# Header #}

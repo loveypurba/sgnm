@@ -3,5 +3,5 @@
 {#<li><a href="/gallery.html" class = "{% if isGallerySelected %} selected {% endif %}">Gallery</a></li>#}
 <li><a href="/events.html" class = "{% if isEventsSelected %} selected {% endif %}">Events</a></li>
 <li><a href="/sewa.html" class = "{% if isSewaSelected %} selected {% endif %}">Sewa</a></li>
-<li><a href="/donate.html" class = "{% if isDonateSelected %} selected {% endif %}">Donate</a></li>
+<li><a href="/donate.php" class = "{% if isDonateSelected %} selected {% endif %}">Donate</a></li>
 <li><a href="/contact.html" class = "{% if isContactSelected %} selected {% endif %}">Contact</a></li>

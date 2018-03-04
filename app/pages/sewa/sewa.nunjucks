@@ -47,7 +47,7 @@
         </p>
 
 
-        <a href="/donate.html" class="sgnm-button">Donate</a>
+        <a href="/donate.php" class="sgnm-button">Donate</a>
 
       </div>
       <img src="images/sewa/widow-sewa.jpg" alt="widow sewa" class="sgnm-widow-sewa-img-des">

@@ -54,7 +54,18 @@
     {# <meta name="theme-color" content="#2F3BA2"> #}
     <meta name="theme-color" content="#ffffff">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Signika" media="none" onload="if(media!='all')media='all'">
+    {# <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Signika"> #}
+
+    <script>
+      window.setTimeout(function () {
+        var $elLink = document.createElement('link');
+        $elLink.rel = 'stylesheet';
+        $elLink.href = 'https://fonts.googleapis.com/css?family=Signika';
+        var godefer = document.getElementsByTagName('link')[0];
+        godefer.parentNode.insertBefore( $elLink, godefer );
+      }, 0);
+    </script>
+
     <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Signika"></noscript>
 
     {# <link rel="stylesheet" href="styles/main.css">  #}
@@ -68,7 +79,7 @@
 
   </head>
 
-  <body id="page" class="sgnm">
+  <body id="page" class="sgnm" style="display:none;">
 
     {% block header %} {% endblock %}
 
@@ -76,12 +87,11 @@
     
     {% include "partials/footer.nunjucks" %}
 
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
-    crossorigin="anonymous"></script>
+    {# <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+    crossorigin="anonymous"></script> #}
 
     <!-- build:js scripts/main.min.js -->
-    <script src="scripts/main.js"></script>
-    <script src="scripts/header.js"></script>
+    <script src="scripts/main.js" async></script>
     <!-- endbuild -->
 
     {% block blockScripts %} {% endblock %}

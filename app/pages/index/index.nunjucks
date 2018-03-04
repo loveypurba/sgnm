@@ -1,7 +1,19 @@
 {% extends "layout.nunjucks" %}
 
 {% block blockStyle %}
-  <link rel="stylesheet" href="/styles/index.css" media="none" onload="if(media!='all')media='all'">
+  {# <link rel="stylesheet" href="/styles/index.css" media="none" onload="if(media!='all')media='all'"> #}
+
+  <script>
+    window.setTimeout(function () {
+      var $elLink = document.createElement('link');
+      $elLink.rel = 'stylesheet';
+      $elLink.href = '/styles/index.css';
+      $elLink.type = 'text/css';
+      var godefer = document.getElementsByTagName('link')[0];
+      godefer.parentNode.insertBefore( $elLink, godefer );
+    }, 0);
+  </script>
+
   <noscript><link rel="stylesheet" href="/styles/index.css"></noscript>
 
   <style>
@@ -271,6 +283,11 @@
       animation-delay: 60s;
     }
 
+    {# Galleria Async Load Issue #}
+    .galleria-container.notouch.galleria-theme-classic {
+      max-width: 700px !important;
+    }
+
   </style>
 {% endblock %}
 
@@ -285,7 +302,7 @@
   
   <main class="sgnm-main">
 
-    {# Hero Section  #}
+    {# Hero Section | Contains versions  #}
       {%
         set config = {
           'activeHeroSectionVer': 2,
@@ -313,13 +330,22 @@
             <div class="icon-calendar"></div>
           </div>
 
+          {% 
+            set upcomingEventConfig = {
+              'country': 'India',
+              'city': 'Amritsar',
+              'date': 'Mar 5 To Mar 11, 2018',
+              'index': 10
+            } 
+          %}
+
           <h3>Upcoming Event</h3>
 
-          <p class="tri-widgets-content tri-widgets-content__address">Malaysia, Petaling Jaya Selangor</p>
+          <p class="tri-widgets-content tri-widgets-content__address">{{upcomingEventConfig.country}}, {{upcomingEventConfig.city}}</p>
 
-          <p class="tri-widgets-content">Nov 27 To Dec 3, 2017</p>
+          <p class="tri-widgets-content">{{upcomingEventConfig.date}}</p>
 
-          <a href="/register.html?seq=0" target="_blank" class="sgnm-button">Register</a>
+          <a href="/register.html?seq={{upcomingEventConfig.index}}" target="_blank" class="sgnm-button">Register</a>
           <a href="/events.html" class="sgnm-button">See all</a>
 
         </section>
@@ -345,7 +371,7 @@
           <div>
             <h3>Make a donation</h3>
             <p class="sgnm-center">We serve humanity</p>
-            <a href="/donate.html" class="sgnm-button">Donate</a>
+            <a href="/donate.php" class="sgnm-button">Donate</a>
           </div>
         </section>
       </section>
@@ -362,6 +388,20 @@
         
         <div class="about-right-container">
           <!--<img src="images/home/mataji-about.jpg" alt="Mata Baljeet Kaur ji Khalsa">-->
+        </div>
+      </section>
+    </section>
+
+    {# Youtube Videos #}
+    <section class="sgnm-outer-container">
+      <section class="sgnm-container">
+        <h2 class="sgnm-carousal-header">Recent Videos</h2>
+        <hr>
+        <div style="text-align:center">
+          <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/StUx4iEfZZ4?rel=0" frameborder="0" allow="autoplay;  
+            encrypted-media" allowfullscreen style="margin: 0 auto; max-width: 100%">
+          </iframe>
         </div>
       </section>
     </section>
@@ -406,12 +446,14 @@
 
       </section>
     </section> #}
-
+    
     {# Carousal #}
     <section class="sgnm-carousal">
       <h2 class="sgnm-carousal-header">Gallery</h2>
       <hr>
       <div id="imageSlider" class="galleria">
+        <div class="galleria-container notouch galleria-theme-classic" style="width: 700px; height: 400px;">
+        </div>
       </div>
     </section>
     {# End Carousal #}
@@ -428,7 +470,7 @@
 
       js.onload = function(){
         if (fn) {
-            fn();
+          fn();
         }
       };
       js.src = src;
@@ -555,7 +597,7 @@
     ];
 
     var main = function () {
-      Galleria.loadTheme('http://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/themes/classic/galleria.classic.min.js');
+      Galleria.loadTheme('https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/themes/classic/galleria.classic.min.js');
 
       Galleria.run('#imageSlider', {
         dataSource: data,
@@ -565,10 +607,15 @@
       $('#imageSlider').css('visibility', 'visible');
     }
 
-    $(document).ready(function() { 
-
-      lazyLoad( "http://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/galleria.min.js", main );
+    document.addEventListener( "DOMContentLoaded" , function () {
+      lazyLoad( 
+        "https://code.jquery.com/jquery-1.12.4.min.js", 
+        function () {
+          lazyLoad( "https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/galleria.min.js", main );
+        }
+      );
       
-    });
+    }); 
+
   </script>
 {% endblock %}

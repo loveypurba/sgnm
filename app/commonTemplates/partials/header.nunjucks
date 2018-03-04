@@ -6,7 +6,9 @@
         <img src="/images/logo-home.png" alt="Sri Guru Nanak Mission" class="sgnm-primary-logo">
       </a>
       {% else %}
+      <a href="/">
         <img src="/images/logo.png" alt="Sri Guru Nanak Mission" class="sgnm-primary-logo">
+      </a>
       {% endif %}
 
       <button type="button" id="btnPrimaryNavigation" class="sgnm-primary-header-navbar-toggle">

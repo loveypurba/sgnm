@@ -6,9 +6,28 @@
   text-align: center;
   padding: 1rem 0;
 
+
+
   @media only screen and (min-width: $tablet-breakpoint) {
     font-size: 1.6rem;
     min-height: 190px;
+  }
+
+  &__terms-and-conditions a {
+    color: white;
+    font-size: 1.4rem;
+  }
+
+  &-social-list {
+    display: inline-block;
+    padding: 0;
+    position: relative;
+    top: 5px;
+  }
+  &-social-list-item {
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
   }
 }
 

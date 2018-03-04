@@ -1,0 +1,88 @@
+{% extends "layout.nunjucks" %}
+
+{% block blockStyle %}
+  <link rel="stylesheet" href="/styles/donate.css">
+{% endblock %}
+
+{# Header #}
+{% block header %}
+  {% set headerClass = "sgnm-header-bg sgnm-header-contact" %}
+  {% set isDonateSelected = true %}
+  {% include "partials/header.nunjucks" %}
+{% endblock %}
+
+{% block content %}
+  
+<main> 
+  {# Contact Us #}
+  <section class="sgnm-contact sgnm-container">
+    <h1 class="sgnm-center">Make a Donation</h1>
+    <hr>
+
+    <p>Join hands and donate for Sri Guru Nanak Mission's various ongoing and future projects.</p>
+
+    <div class="contact-us-address-container">
+      {# India #}
+      <div class="contact-us-address-wrapper">
+        <h2>India</h2>
+        <div>Bank Name: HDFC Bank</div>
+        <div>Name: Shree Guru Nanak Yog Mission</div>
+        <div>Account No: 50100044595518</div>
+        <div>Bank Address: Choti Baradari, Jalandhar, India</div>
+        <div>IFSC Code: HDFC0001383</div>
+        
+        <br>
+
+        <div>Bank Name: ICICI Bank</div>
+        <div>Name: Shree Guru Nanak Yog Mission</div>
+        <div>Account No: 008201250879</div>
+        <div>Bank Address: GT road branch, Jalandhar, India</div>
+        <div>IFSC Code: ICIC0000082</div>
+
+        <br>
+
+        <div>In case you face any difficulty, kindly call:
+        <br>
+        0091-988-811-8120, 0091-981-527-7334</div>
+      </div>
+
+      {# Canada #}
+      <div class="contact-us-address-wrapper">
+        <h2>Canada</h2>
+        <div>Bank Name: TD Canada Trust</div>
+        <div>Name: Shree Guru Nanak Yog Mission</div>
+        <div>Account No: 02345216413</div>
+        <div>Transit No: 02340 </div>
+        <div>Inst No: 004 </div>
+
+        <br>
+
+        <div>In case you face any difficulty, kindly call:
+        <br>
+        001-604-783-5911, 001-778-708-6910</div>
+      </div>
+
+      {# Uniked Kingdom #}
+      <div class="contact-us-address-wrapper">
+        <h2>United Kingdom</h2>
+        <div>Bank Name: HSBC Bank</div>
+        <div>Account No: 01736655</div>
+        <div>Sort Code: 40-11-13</div>
+        <div>Bank Address: Harbone branch</div>
+
+        <br>
+
+        <div>In case you face any difficulty, kindly call:
+        <br>
+        0044-796-700-5629, 0044-781-367-4720</div>
+      </div>
+    </div>
+
+    <div class="contact-us-form-container">
+    
+    </div>
+
+  </section>
+</main>
+
+{% endblock %}
