@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sri Guru Nanak Mission</title>
+
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
+
+    <!-- Web Application Manifest -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Add to homescreen for Chrome on Android -->
+
+
+    <!-- Add to homescreen for Safari on iOS -->
+
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+
+
+    <link rel="apple-touch-icon" sizes="57x57" href="images/touch/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/touch/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/touch/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/touch/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/touch/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/touch/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/touch/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/touch/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/touch/apple-icon-180x180.png">
+
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/android/android-icon-192x192.png">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+
+    <!-- Color the status bar on mobile devices -->
+
+    <meta name="theme-color" content="#ffffff">
+
+    <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="/styles/register.css">
+
+  </head>
+  <body class="sgnm">
+
+
+  <div class="register-container">
+    <iframe src="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc-fTw6ULALsKdi6Y-SZH3abmKCG0OvVovUef43k53QP8PyKg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0" style="width: 100%; height:100vh">Loading...</iframe>
+  </div>
+
+  <script>
+
+    var registerationLinksArr = [
+      "https://docs.google.com/forms/d/e/1FAIpQLSfpz5raWPssp6ZBezyTuYWpfIDJW3xpmeemY2Yn3afutpX0yg/viewform?usp=pp_url&entry.1087743563=UK,+SMETHWICK(+15th+-+22nd+July+),+GURU+NANAK+GURDWARA+SMETHWICK,+128-130+High+St,+SMETHWICK+B66+3AP",
+
+      "https://docs.google.com/forms/d/e/1FAIpQLSfpz5raWPssp6ZBezyTuYWpfIDJW3xpmeemY2Yn3afutpX0yg/viewform?usp=pp_url&entry.1087743563=UK,+SOUTHALL(+22nd+-+28th+July+),+GURDWARA+SRI+GURU+SINGH+SABHA,+HAVELOCK+RD,+SOUTHALL+UB2+4NP",
+
+      "https://docs.google.com/forms/d/e/1FAIpQLSfpz5raWPssp6ZBezyTuYWpfIDJW3xpmeemY2Yn3afutpX0yg/viewform?usp=pp_url&entry.1087743563=UK,+COVENTRY(+29th+Jul+-+4th+Aug,+2019+),+GURDWARA+GURU+NANAK+PRAKASH,+71+Harnall+Ln+W,+COVENTRY+CV1+4FB",
+
+      "https://docs.google.com/forms/d/e/1FAIpQLSfpz5raWPssp6ZBezyTuYWpfIDJW3xpmeemY2Yn3afutpX0yg/viewform?usp=pp_url&entry.1087743563=UK,+WOLVERHAMPTON(+5th+-+11th+Aug,+2019+),+GURU+NANAK+SIKH+GURDWARA+Sedgley+St.,+91+Duncan+St,+WOLVERHAMPTON+WV2+3AJ",
+
+      "https://docs.google.com/forms/d/e/1FAIpQLSfpz5raWPssp6ZBezyTuYWpfIDJW3xpmeemY2Yn3afutpX0yg/viewform?usp=pp_url&entry.1087743563=UK,+BROMWICH(+12th+-+18th+Aug,+2019+),+GURDWARA+GURU+HAR+RAI+SAHIB+JI.,+118+High+St,+WEST+BROMWICH+B70+6JW"
+    ]
+
+    function getParameterByName (name, url) {
+      if (!url) {
+        url = window.location.href;
+      }
+
+      name = name.replace(/[\[\]]/g, "\\$&");
+
+      var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+          results = regex.exec(url);
+
+      if (!results) {
+        return null;
+      }
+      if (!results[2]) {
+        return '';
+      }
+
+      return decodeURIComponent( results[2].replace( /\+/g, " " ) );
+    }
+
+    document.getElementsByTagName('iframe')[0].src = registerationLinksArr[ getParameterByName('seq') ];
+
+  </script>
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108265007-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-108265007-1');
+    </script>
+
+  </body>
+</html>
+
+
+

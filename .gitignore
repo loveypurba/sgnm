@@ -1,9 +1,2 @@
-node_modules
-dist/
-.tmp
-app.yaml
-*.html
-app/pages/temp.nunjucks
-
 **/*/.DS_Store
 .DS_Store
