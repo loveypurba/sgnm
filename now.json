@@ -1,4 +1,5 @@
 {
   "name": "srigurunanakmission",
-  "alias": ["sgnm.amandeep.tech"]
+  "alias": ["sgnm.amandeep.tech"],
+  "public": true
 }
