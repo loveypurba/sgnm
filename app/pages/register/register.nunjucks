@@ -1,5 +1,0 @@
-{% include "register/v1-iframe/v1-iframe.nunjucks" %}
-
-{# {% include "register/v2-GoogleFormReplica/v2-GoogleFormReplica.nunjucks" %} #}
-
-{# {% include "register/v3-MaterializeCSS/v3-MaterializeCSS.nunjucks" %} #}
